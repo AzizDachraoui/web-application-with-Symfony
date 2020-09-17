@@ -1,0 +1,79 @@
+<table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_1">
+    <thead>
+    <tr>
+        <th>CIN</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>NB absence</th>
+        <th>Etat</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {% if etudiants is not empty %}
+        {% for etudiant in etudiants %}
+            {% set nbrAbsence = null %}
+            <tr class="odd gradeX">
+                <td>{{ etudiant.CIN }}</td>
+                <td>{{ etudiant.nom }}</td>
+                <td>{{ etudiant.prenom }}</td>
+
+                <td> {% for absenceEtd in absenceEtds %} {% if absenceEtd.etudiant.id == etudiant.id %}
+                        {% set nbrAbsence = absenceEtd.nbAbsence %}
+                        {{ nbrAbsence }}{% endif %} {% endfor %}
+                </td>
+                <td>
+                    {% if nbrAbsence == "0"or nbrAbsence <3 %}
+                        <span class="label label-sm label-primary"> <i class="fa fa-thumbs-o-up"></i></span>
+                    {% elseif nbrAbsence == 3 or nbrAbsence ==4 %}
+                        <span class="label label-sm label-warning"> <i class="fa fa-warning"></i> </span>
+                    {% elseif nbrAbsence >=5 %}
+                        <span class="label label-sm label-danger"> <i class="fa fa-minus-circle"></i></span>
+                    {% endif %}
+                </td>
+                <td>
+                    <a data-toggle="modal" href="#edit-absence" id="addAbsenceEtudiant"
+                       data-idetd="{{ etudiant.id }}" data-idmatiere="{{ matiere.id }}">
+                    {% if nbrAbsence == "0" or  nbrAbsence == null %}
+                        <span class="label label-sm label-success">     Ajouter absence</span>
+                    {% else %}
+                        <span class="label label-sm label-info">    Modifier l'absence</span>
+                    {% endif %}</a>
+                </td>
+            </tr>
+        {% endfor %}
+    {% endif %}
+    </tbody>
+</table>
+
+<div id="edit-absence" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+    <div class="modal-dialog" id="modal-absence-etd">
+    </div>
+</div>
+
+
+<script>
+    jQuery(document).ready(function () {
+        TableDatatablesManaged.init();
+
+        $("[id=addAbsenceEtudiant]").click(function () {
+            var idEtd = $(this).data("idetd");
+            var idMatiere = $(this).data("idmatiere");
+
+            var dataString = {idEtd: idEtd, idMatiere: idMatiere};
+            $.ajax
+            ({
+                type: "POST",
+                url: "{{ path('faculte_admin_render_modal_absence_etd') }}",
+                data: dataString,
+                success: function (response) {
+                    $("#modal-absence-etd").html(response);
+
+                }
+            });
+        });
+    });
+</script>
+
+

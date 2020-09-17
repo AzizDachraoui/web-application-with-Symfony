@@ -1,0 +1,58 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet-body">
+                    <div class="mt-element-list">
+                        <div class="mt-list-head list-todo bg-green-seagreen bg-font-green-seagreen">
+                            <div class="list-toggle done uppercase">
+                                <h3 class="list-title">Licence</h3>
+                            </div>
+                        </div>
+                        <div class="mt-list-container list-todo">
+                            {% if Filieres is not empty %}
+                                {% for Filiere in Filieres %}
+                                    <ul>
+                                        <li class="mt-list-item">
+                                            <div class="list-todo-item grey">
+                                                <a class="list-toggle-container font-white accordion-toggle" data-toggle="collapse"
+                                                   href="#task-1-1" >
+                                                    <div class="list-toggle done uppercase">
+                                                        <div class=" green-seagreen font-green-seagreen list-toggle-title bold" >{{ Filiere.nom }}</div>
+                                                    </div>
+                                                </a>
+                                                <div class="task-list panel-collapse collapse in border-bottom" id="task-1-1" >
+                                                    <ul>
+                                                     {% for niveau in Filiere.niveaux %}
+                                                        <li class="task-list-item done">
+                                                            <div class="task-icon">
+                                                                <a href="javascript:;">
+                                                                    <i class="icon-check"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="task-content">
+                                                                <h4 class="uppercase bold">
+                                                                    <a href="{{ path('faculte_admin_absenceEtdGroupe',{'idNiveau':niveau.id}) }}">{{ niveau.numeroNiveau }}</a>
+                                                                </h4>
+
+                                                            </div>
+                                                        </li>
+                                                     {% endfor %}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <!-- END PAGE BASE CONTENT -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

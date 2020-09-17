@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.2.0
+Version: 3.4
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest (the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Head BEGIN -->
+<head>
+    <meta charset="utf-8">
+    <title>Metronic Frontend (with Top Bar)</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta content="Metronic Shop UI description" name="description">
+    <meta content="Metronic Shop UI keywords" name="keywords">
+    <meta content="keenthemes" name="author">
+
+    <meta property="og:site_name" content="-CUSTOMER VALUE-">
+    <meta property="og:title" content="-CUSTOMER VALUE-">
+    <meta property="og:description" content="-CUSTOMER VALUE-">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
+    <meta property="og:url" content="-CUSTOMER VALUE-">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Fonts START -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+    <!-- Fonts END -->
+
+    <!-- Global styles START -->
+    <link href="{{ asset('bundles/faculteFront/global/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Global styles END -->
+
+    <!-- Page level plugin styles START -->
+    <link href="{{ asset('bundles/faculteFront/global/plugins/fancybox/source/jquery.fancybox.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/slider-revolution-slider/rs-plugin/css/settings.css')}}" rel="stylesheet">
+    <!-- Page level plugin styles END -->
+
+    <!-- Theme styles START -->
+    <link href="{{ asset('bundles/faculteFront/global/css/components.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/pages/css/style-revolution-slider.css')}}" rel="stylesheet"><!-- metronic revo slider styles -->
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/style-responsive.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/themes/red.css')}}" rel="stylesheet" id="style-color">
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/custom.css')}}" rel="stylesheet">
+    <!-- Theme styles END -->
+</head>
+<!-- Head END -->
+
+<!-- Body BEGIN -->
+<body class="corporate">
+<!-- BEGIN STYLE CUSTOMIZER -->
+<div class="color-panel hidden-sm">
+    <div class="color-mode-icons icon-color"></div>
+    <div class="color-mode-icons icon-color-close"></div>
+    <div class="color-mode">
+        <p>THEME COLOR</p>
+        <ul class="inline">
+            <li class="color-red current color-default" data-style="red"></li>
+            <li class="color-blue" data-style="blue"></li>
+            <li class="color-green" data-style="green"></li>
+            <li class="color-orange" data-style="orange"></li>
+            <li class="color-gray" data-style="gray"></li>
+            <li class="color-turquoise" data-style="turquoise"></li>
+        </ul>
+    </div>
+</div>
+<!-- END BEGIN STYLE CUSTOMIZER -->
+
+<!-- BEGIN TOP BAR -->
+<div class="pre-header">
+    <div class="container">
+        <div class="row">
+            <!-- BEGIN TOP BAR LEFT PART -->
+            <div class="col-md-6 col-sm-6 additional-shop-info">
+                <ul class="list-unstyled list-inline">
+                    <li><i class="fa fa-phone"></i><span>+216 71 90 52 48 </span></li>
+                    <li><i class="fa fa-envelope-o"></i><span>info@keenthemes.com</span></li>
+                </ul>
+            </div>
+            <!-- END TOP BAR LEFT PART -->
+            <!-- BEGIN TOP BAR MENU -->
+            <div class="col-md-6 col-sm-6 additional-nav">
+                <ul class="list-unstyled list-inline pull-right">
+                    <li><a href="{{ path('fos_user_security_login')}}"> Connexion </a></li>
+                </ul>
+            </div>
+            <!-- END TOP BAR MENU -->
+        </div>
+    </div>
+</div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+    <div class="container">
+        <a class="site-logo" href="index.html"><img src="{{ asset('bundles/faculteEnseignant/frontend/layout/img/logos/logo-corp-red.png')}}" alt="Metronic FrontEnd"></a>
+
+        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+        <!-- BEGIN NAVIGATION -->
+        <div class="header-navigation pull-right font-transform-inherit">
+            <ul>
+                <li><a href="{{ path('faculte_front_PageAccueil') }}">Accueil</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle " data-toggle="dropdown" data-target="#" href="javascript:;">
+                        l'université
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ path('faculte_front_presentation') }}">Présentation</a></li>
+                        <li><a href="{{ path('faculte_front_organigramme') }}">Organigramme</a></li>
+                        <li><a href="{{ path('faculte_front_officiel') }}">Textes officiels</a></li>
+                        <li><a href="{{ path('faculte_front_chiffre') }}">l'université en Chiffres</a></li>
+                        <li><a href="{{ path('faculte_front_infrastructure') }}">Infrastructure technique</a></li>
+                        <li><a href="{{ path('faculte_front_observatoire') }}">Veille et observatoire</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#modal-inscription" data-toggle="modal">
+                        Diplômes
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="index.html">Licences<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('faculte_front_LAEABF') }}">LA Economie - ABF</a></li>
+                                <li><a href="{{ path('faculte_front_LFEMFB') }}">LF Economie - MFB</a></li>
+                                <li><a href="{{ path('faculte_front_LAGC') }}">LA Gestion - Compta</a></li>
+                                <li><a href="{{ path('faculte_front_LAGGRH') }}">LA Gestion - GRH</a></li>
+                                <li><a href="{{ path('faculte_front_LFGM') }}">LF Gestion -Marketing</a></li>
+                                <li><a href="{{ path('faculte_front_LAIAG') }}">LA Informatique - AG</a></li>
+                                <li><a href="{{ path('faculte_front_LFIAG') }}">LF Informatique - AG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-megamenu">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                        Recherches
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="{{ path('faculte_front_reglement') }}">Réglement des études</a></li>
+                        <li> <a href="{{ path('faculte_front_environnement') }}">Environnement des études</a></li>
+                        <li> <a href="{{ path('faculte_front_calendries') }}">Calendries de vacances </a></li>
+                        <li> <a href="{{ path('faculte_front_bourse') }}">Bourses</a></li>
+                        <li><a href="{{ path('faculte_front_activite') }}">Activités Estudiantines</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{{ path('faculte_front_galiere') }}">Galerie</a></li>
+                <li><a href="{{ path('faculte_front_contact') }}">Contact</a></li>
+
+
+
+                <!-- BEGIN TOP SEARCH -->
+                <li class="menu-search">
+                    <span class="sep"></span>
+                    <i class="fa fa-search search-btn"></i>
+                    <div class="search-box">
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search" class="form-control">
+                                <span class="input-group-btn">
+                      <button class="btn btn-primary" type="submit">Search</button>
+                    </span>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <!-- END TOP SEARCH -->
+            </ul>
+        </div>
+        <!-- END NAVIGATION -->
+    </div>
+</div>
+<!-- Header END -->
+
+    <div class="main">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="{{ path('faculte_front_homepage') }}">Accueil</a></li>
+                <li>Recherches</li>
+                <li class="active">Bourses</li>
+            </ul>
+            <!-- BEGIN SIDEBAR & CONTENT -->
+            <div class="row margin-bottom-40">
+                <!-- BEGIN CONTENT -->
+                <div class="col-md-12 col-sm-12">
+                    <h1>LES BOURSES D'ÉTUDES</h1>
+                    <div class="content-page">
+                        <div class="row">
+                            <!-- BEGIN LEFT SIDEBAR -->
+                            <div class="col-md-9 col-sm-9 blog-item">
+                                <div class="blog-item-img">
+                                    <!-- BEGIN CAROUSEL -->
+                                    <!-- BEGIN RIGHT SIDEBAR -->
+                                    <div class="col-md-3 col-sm-3 blog-sidebar">
+                                        <!-- CATEGORIES START -->
+                                        <h2 class="no-top-space">Recherches</h2>
+                                        <ul class="nav sidebar-categories margin-bottom-40">
+                                            <li class="{% if app.request.attributes.get('_route') == "faculte_front_reglement" %} active {% endif %}">
+                                                <a href="{{ path('faculte_front_reglement') }}">Réglement des études</a></li>
+                                            <li class="{% if app.request.attributes.get('_route') == "faculte_front_environnement" %} active {% endif %}">
+                                                <a href="{{ path('faculte_front_environnement') }}">Environnement des études</a></li>
+                                            <li class="{% if app.request.attributes.get('_route') == "faculte_front_calendries" %} active {% endif %}">
+                                                <a href="{{ path('faculte_front_calendries') }}">Calendries de vacances</a></li>
+                                            <li class="{% if app.request.attributes.get('_route') == "faculte_front_bourse" %} active {% endif %}">
+                                                <a href="{{ path('faculte_front_bourse') }}">Bourses</a></li>
+                                            <li class="{% if app.request.attributes.get('_route') == "faculte_front_activite" %} active {% endif %}">
+                                                <a href="{{ path('faculte_front_activite') }}">Activités Estudiantines</a></li>
+                                        </ul>
+                                        <!-- CATEGORIES END -->
+                                    </div>
+                                    <!-- END RIGHT SIDEBAR -->
+                                    <div class="front-carousel">
+                                        <div id="myCarousel" class="carousel slide">
+                                            <div class="col-md-8 col-sm-8">
+                                            <!-- Carousel items -->
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="{{ asset('bundles/faculteFront/frontend/pages/img/posts/img1.jpg')}}" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="{{ asset('bundles/faculteFront/frontend/pages/img/posts/img2.jpg')}}" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="{{ asset('bundles/faculteFront/frontend/pages/img/posts/img3.jpg')}}" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="{{ asset('bundles/faculteFront/frontend/pages/img/posts/img4.jpg')}}" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Carousel nav -->
+                                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                                                <i class="fa fa-angle-left"></i>
+                                            </a>
+                                            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END CAROUSEL -->
+                                </div>
+                                <div class="col-md-9 col-sm-9">
+                                    <h2><i class="primary-link font-green-jungle">Bourses de licence:</i></h2>
+                                    <p>Elles sont accordées sur un barème national tenant compte des ressources et des charges familiales.</p>
+                                    <h2><i class="primary-link font-green-jungle">Bourses de 3ème cycle:</i></h2>
+                                    <p>Chaque année, le Ministère de l’Education Nationale, de l’Enseignement Supérieur, de la Formation des Cadres et de la Recherche Scientifique octroie un certain nombre de bourses aux différentes Universités marocaines.</p>
+                                    <h2><i class="primary-link font-green-jungle">Bourses de Master:</i></h2>
+                                    <li>Ce sont des bourses de mérite, accordées aux étudiants en tenant compte des mentions obtenues durant les trois années de la licence et des notes obtenues lors du concours d’accès au Master. Le pourcentage des boursiers qui en bénéficient varie selon le type de master, privilégiant des masters prioritaires pour le pays .</li>
+                                    <h2><i class="primary-link font-green-jungle">Bourses de Doctorat ou de recherche:</i></h2>
+                                    <li>accompagner les étudiants dans leurs démarches d'orientation.</li>
+                                    <li>Les bourses de recherche octroyées par le Centre National pour la Recherche Scientifique et Technique sont des bourses d’excellence destinées à inciter les étudiants les plus méritants à préparer  une  thèse  de  doctorat.  Une  commission  nationale  procède  à  la  sélection  des meilleurs dossiers. D’autres bourses sont offertes par des organismes internationaux (Agence Universitaire de la Francophonie, Commission maroco-américaine pour l’échange éducatif et culturel, …). Pour plus d’informations, consultez le site www.cnr.ac.ma.</li>
+                            </div>
+                            <!-- END LEFT SIDEBAR -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END CONTENT -->
+            </div>
+            <!-- END SIDEBAR & CONTENT -->
+        </div>
+    </div>

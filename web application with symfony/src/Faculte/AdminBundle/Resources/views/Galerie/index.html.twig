@@ -1,0 +1,77 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a>
+                </li>
+                <li class="active" >liste des demandes de rattrapage
+                </li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <div class="caption">
+                                <i class="fa fa-file-image-o font-green"></i>
+                                <span class="caption-subject font-green bold uppercase">liste des demandes de rattrapage</span>
+                            </div>
+                        </div>
+                        <div class="actions">
+
+                        </div>
+                    </div>
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                    <div class="portlet light">
+                        <div class="portlet-body">
+                            <table class="table table-striped table-bordered table-hover" id="sample_1">
+                                <thead>
+                                <tr>
+                                    <th>Enseignant</th>
+                                    <th>Matière</th>
+                                    <th>Date de rattrapage</th>
+                                    <th>Date de création</th>
+                                    <th>Acceptée</th>
+                                   <th>Consultée</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                            <tr class="odd gradeX">
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td>
+                                                </td>
+                                                <td>
+                                                </td>
+                                                 <td>
+                                                 </td>
+                                            </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END EXAMPLE TABLE PORTLET-->
+
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+{% endblock %}
+
+
+
+

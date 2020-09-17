@@ -1,0 +1,47 @@
+{% extends "FaculteEtudiantBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="col-md-9 col-sm-9">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption font-red-sunglo">
+                    <i class="icon-settings font-red-sunglo"></i>
+                    <span class="caption-subject bold uppercase"> Catégoris de Cours </span>
+                </div>
+            </div>
+            <div class="portlet-body ">
+                <div class="row margin-bottom-40">
+                    <!-- BEGIN SIDEBAR -->
+                    <div class="sidebar col-md-12 col-sm-12">
+                        <ul class="list-group margin-bottom-25 sidebar-menu">
+                            <li class="list-group-item clearfix dropdown ">
+                                <a href="javascript:void(0);" class="collapsed">
+                                    <i class="fa fa-angle-right"></i>
+                                    Licence
+                                </a>
+                                {% if Filieres is not empty %}
+                                {% for Filiere in Filieres %}
+                                <ul class="dropdown-menu" >
+                                    <li class="list-group-item dropdown clearfix ">
+                                        <a href="javascript:void(0);" class="collapsed"><i class="fa fa-angle-right"></i>   {{ Filiere.nom }} </a>
+                                        {% for niveau in Filiere.niveaux %}
+                                        <ul class="dropdown-menu" >
+                                            <li class="list-group-item dropdown clearfix">
+                                                <a href="{{ path('faculte_etudiant_matiere',{'idNiveau':niveau.id}) }}"><i class="fa fa-angle-right"></i> {{ niveau.numeroNiveau }} </a>
+                                            </li>
+                                        </ul>
+                                        {% endfor %}
+                                    </li>
+                                </ul>
+                                {% endfor %}
+                                {% endif %}
+                            </li>
+                           </ul>
+
+                    </div>
+                    <!-- END SIDEBAR -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

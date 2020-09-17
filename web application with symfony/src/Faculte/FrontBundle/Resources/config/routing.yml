@@ -1,0 +1,83 @@
+faculte_front_InscriptionLigne:
+    path:     /InscriptionLigne
+    defaults: { _controller: FaculteFrontBundle:InscriptionLigne:index }
+faculte_front_Pageformation:
+    path:     /formation
+    defaults: { _controller: FaculteFrontBundle:PageInscription:formation }
+faculte_front_homepage:
+    path:     /
+    defaults: { _controller: FaculteFrontBundle:Publication:index }
+faculte_front_galiere:
+    path:     /galiere
+    defaults: { _controller: FaculteFrontBundle:Default:gallerie }
+faculte_front_bourse:
+    path:     /bourse
+    defaults: { _controller: FaculteFrontBundle:Default:bourse }
+faculte_front_environnement:
+    path:     /environnement
+    defaults: { _controller: FaculteFrontBundle:Default:environnement }
+faculte_front_reglement:
+    path:     /reglement
+    defaults: { _controller: FaculteFrontBundle:Default:reglement }
+faculte_front_calendries:
+    path:     /calendries
+    defaults: { _controller: FaculteFrontBundle:Default:calendries }
+faculte_front_activite:
+    path:     /activite
+    defaults: { _controller: FaculteFrontBundle:Default:activite }
+faculte_front_LAEABF:
+    path:     /LAEABF
+    defaults: { _controller: FaculteFrontBundle:Default:LAEABF }
+faculte_front_LFEMFB:
+    path:     /LFEMFB
+    defaults: { _controller: FaculteFrontBundle:Default:LFEMFB }
+faculte_front_LAGC:
+    path:     /LAGC
+    defaults: { _controller: FaculteFrontBundle:Default:LAGC }
+faculte_front_LAGGRH:
+    path:     /LAGGRH
+    defaults: { _controller: FaculteFrontBundle:Default:LAGGRH }
+faculte_front_LFGM:
+    path:     /LFGM
+    defaults: { _controller: FaculteFrontBundle:Default:LFGM }
+faculte_front_LAIAG:
+    path:     /LAIAG
+    defaults: { _controller: FaculteFrontBundle:Default:LAIAG }
+faculte_front_LFIAG:
+    path:     /LFIAG
+    defaults: { _controller: FaculteFrontBundle:Default:LFIAG }
+faculte_front_presentation:
+    path:     /presentation
+    defaults: { _controller: FaculteFrontBundle:Default:presentation }
+faculte_front_organigramme:
+    path:     /organigramme
+    defaults: { _controller: FaculteFrontBundle:Default:organigramme }
+faculte_front_officiel:
+    path:     /officiel
+    defaults: { _controller: FaculteFrontBundle:Default:officiel }
+faculte_front_chiffre:
+    path:     /chiffre
+    defaults: { _controller: FaculteFrontBundle:Default:chiffre }
+faculte_front_infrastructure:
+    path:     /infrastructure
+    defaults: { _controller: FaculteFrontBundle:Default:infrastructure }
+faculte_front_observatoire:
+    path:     /observatoire
+    defaults: { _controller: FaculteFrontBundle:Default:observatoire }
+faculte_front_PageAccueil:
+    path:     /PageAccueil
+    defaults: { _controller: FaculteFrontBundle:Default:PageAccueil }
+faculte_front_demandeEnregistre:
+    path:     /demandeEnregistre
+    defaults: { _controller: FaculteFrontBundle:Inscription:demandeEnregistre }
+
+
+faculte_front_inscription:
+    path:     /inscription
+    defaults: { _controller: FaculteFrontBundle:Inscription:inscription }
+faculte_front_publier:
+    path:     /publier/{idPublier}
+    defaults: { _controller: FaculteFrontBundle:Publication:publier}
+faculte_front_contact:
+    path:     /contact
+    defaults: { _controller: FaculteFrontBundle:Contact:Contact }

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.2.0
+Version: 3.4
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest (the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Head BEGIN -->
+<head>
+    <meta charset="utf-8">
+    <title>Metronic Frontend (with Top Bar)</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta content="Metronic Shop UI description" name="description">
+    <meta content="Metronic Shop UI keywords" name="keywords">
+    <meta content="keenthemes" name="author">
+
+    <meta property="og:site_name" content="-CUSTOMER VALUE-">
+    <meta property="og:title" content="-CUSTOMER VALUE-">
+    <meta property="og:description" content="-CUSTOMER VALUE-">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
+    <meta property="og:url" content="-CUSTOMER VALUE-">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Fonts START -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+    <!-- Fonts END -->
+
+    <!-- Global styles START -->
+    <link href="{{ asset('bundles/faculteFront/global/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Global styles END -->
+
+    <!-- Page level plugin styles START -->
+    <link href="{{ asset('bundles/faculteFront/global/plugins/fancybox/source/jquery.fancybox.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/slider-revolution-slider/rs-plugin/css/settings.css')}}" rel="stylesheet">
+    <!-- Page level plugin styles END -->
+
+    <!-- Theme styles START -->
+    <link href="{{ asset('bundles/faculteFront/global/css/components.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/pages/css/style-revolution-slider.css')}}" rel="stylesheet"><!-- metronic revo slider styles -->
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/style-responsive.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/themes/red.css')}}" rel="stylesheet" id="style-color">
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/custom.css')}}" rel="stylesheet">
+    <!-- Theme styles END -->
+</head>
+<!-- Head END -->
+
+<!-- Body BEGIN -->
+<body class="corporate">
+<!-- BEGIN STYLE CUSTOMIZER -->
+<div class="color-panel hidden-sm">
+    <div class="color-mode-icons icon-color"></div>
+    <div class="color-mode-icons icon-color-close"></div>
+    <div class="color-mode">
+        <p>THEME COLOR</p>
+        <ul class="inline">
+            <li class="color-red current color-default" data-style="red"></li>
+            <li class="color-blue" data-style="blue"></li>
+            <li class="color-green" data-style="green"></li>
+            <li class="color-orange" data-style="orange"></li>
+            <li class="color-gray" data-style="gray"></li>
+            <li class="color-turquoise" data-style="turquoise"></li>
+        </ul>
+    </div>
+</div>
+<!-- END BEGIN STYLE CUSTOMIZER -->
+
+<!-- BEGIN TOP BAR -->
+<div class="pre-header">
+    <div class="container">
+        <div class="row">
+            <!-- BEGIN TOP BAR LEFT PART -->
+            <div class="col-md-6 col-sm-6 additional-shop-info">
+                <ul class="list-unstyled list-inline">
+                    <li><i class="fa fa-phone"></i><span>+216 71 90 52 48 </span></li>
+                    <li><i class="fa fa-envelope-o"></i><span>info@keenthemes.com</span></li>
+                </ul>
+            </div>
+            <!-- END TOP BAR LEFT PART -->
+            <!-- BEGIN TOP BAR MENU -->
+            <div class="col-md-6 col-sm-6 additional-nav">
+                <ul class="list-unstyled list-inline pull-right">
+                    <li><a href="{{ path('fos_user_security_login')}}"> Connexion </a></li>
+                </ul>
+            </div>
+            <!-- END TOP BAR MENU -->
+        </div>
+    </div>
+</div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+    <div class="container">
+        <a class="site-logo" href="index.html"><img src="{{ asset('bundles/faculteEnseignant/frontend/layout/img/logos/logo-corp-red.png')}}" alt="Metronic FrontEnd"></a>
+
+        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+        <!-- BEGIN NAVIGATION -->
+        <div class="header-navigation pull-right font-transform-inherit">
+            <ul>
+                <li><a href="{{ path('faculte_front_PageAccueil') }}">Accueil</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle " data-toggle="dropdown" data-target="#" href="javascript:;">
+                        l'université
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ path('faculte_front_presentation') }}">Présentation</a></li>
+                        <li><a href="{{ path('faculte_front_organigramme') }}">Organigramme</a></li>
+                        <li><a href="{{ path('faculte_front_officiel') }}">Textes officiels</a></li>
+                        <li><a href="{{ path('faculte_front_chiffre') }}">l'université en Chiffres</a></li>
+                        <li><a href="{{ path('faculte_front_infrastructure') }}">Infrastructure technique</a></li>
+                        <li><a href="{{ path('faculte_front_observatoire') }}">Veille et observatoire</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#modal-inscription" data-toggle="modal">
+                        Diplômes
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="index.html">Licences<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('faculte_front_LAEABF') }}">LA Economie - ABF</a></li>
+                                <li><a href="{{ path('faculte_front_LFEMFB') }}">LF Economie - MFB</a></li>
+                                <li><a href="{{ path('faculte_front_LAGC') }}">LA Gestion - Compta</a></li>
+                                <li><a href="{{ path('faculte_front_LAGGRH') }}">LA Gestion - GRH</a></li>
+                                <li><a href="{{ path('faculte_front_LFGM') }}">LF Gestion -Marketing</a></li>
+                                <li><a href="{{ path('faculte_front_LAIAG') }}">LA Informatique - AG</a></li>
+                                <li><a href="{{ path('faculte_front_LFIAG') }}">LF Informatique - AG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-megamenu">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                        Recherches
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="{{ path('faculte_front_reglement') }}">Réglement des études</a></li>
+                        <li> <a href="{{ path('faculte_front_environnement') }}">Environnement des études</a></li>
+                        <li> <a href="{{ path('faculte_front_calendries') }}">Calendries de vacances </a></li>
+                        <li> <a href="{{ path('faculte_front_bourse') }}">Bourses</a></li>
+                        <li><a href="{{ path('faculte_front_activite') }}">Activités Estudiantines</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{{ path('faculte_front_galiere') }}">Galerie</a></li>
+                <li><a href="{{ path('faculte_front_contact') }}">Contact</a></li>
+
+
+
+                <!-- BEGIN TOP SEARCH -->
+                <li class="menu-search">
+                    <span class="sep"></span>
+                    <i class="fa fa-search search-btn"></i>
+                    <div class="search-box">
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search" class="form-control">
+                                <span class="input-group-btn">
+                      <button class="btn btn-primary" type="submit">Search</button>
+                    </span>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <!-- END TOP SEARCH -->
+            </ul>
+        </div>
+        <!-- END NAVIGATION -->
+    </div>
+</div>
+<!-- Header END -->
+    <div class="main">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="{{ path('faculte_front_homepage') }}">Accueil</a></li>
+                <li>Licences</li>
+                <li class="active">LA Gestion - Compta</li>
+            </ul>
+            <!-- BEGIN SIDEBAR & CONTENT -->
+            <div class="row margin-bottom-40">
+                <!-- BEGIN CONTENT -->
+                <div class="col-md-12 col-sm-12">
+                    <h1>Licence Appliquée Gestion - Comptabilité de Gestion</h1>
+                    <div class="content-page">
+                        <div class="row">
+                                <!-- TABS -->
+                                <div class="col-md-8 tab-style-1">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#tab-1">Objectifs</a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-2">Perspectives</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="tab-1" class="tab-pane row fade active in">
+                                            <div class="col-md-12">
+                                                <p class="margin-bottom-10">Cette formation appliquée de 3 ans après le baccalauréat a pour but d'apporter aux étudiants une formation généraliste en Sciences de Gestion et plus particulièrement en Sciences Comptables. Elle a aussi pour objectif de préparer les étudiants à devenir des futurs cadres compétents à l'échelle locale ou à l'international.<br>
+                                                    Cette formation vise ainsi à :</p>
+                                                <p><i class="fa fa-star-o">  Acquérir une culture générale et à consolider des connaissances en Sciences de Gestion et Sciences Comptables.</i></p>
+                                                <p><i class="fa fa-star-o">  Maîtriser les principes et les normes comptables en tenant compte du cadre légal en la matière.</i></p>
+                                                <p><i class="fa fa-star-o">  Assurer une maîtrise des aspects juridiques et fiscaux des organisations tunisiennes.</i></p>
+                                                <p><i class="fa fa-star-o">  Bénéficier d'une très bonne maîtrise orale et écrite des langues comme l'anglais d'affaire,.</i></p>
+                                                <p><i class="fa fa-star-o">  Maîtriser l'outil informatique.</i></p>
+                                            </div>
+                                        </div>
+                                        <div id="tab-2" class="tab-pane row fade">
+                                            <div class="col-md-12">
+                                                <p><i class="fa fa-star-o">    Poursuite des études en intégrant éventuellement un master de Sciences de Gestion.</i></p>
+                                                <p><i class="fa fa-star-o">    L'insertion professionnelle est multiple et variée : aides comptables, conseillers en comptabilité, gestionnaires, chargés d'études ou de projets,...dans les entreprises privées, les administrations, les banques, les assurances, les organismes professionnels etc...</i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END TABS -->
+                            <!-- BEGIN RIGHT SIDEBAR -->
+                            <div class="col-md-3 col-sm-3 blog-sidebar">
+                                <!-- CATEGORIES START -->
+                                <h2 class="no-top-space">Licences</h2>
+                                <ul class="nav sidebar-categories margin-bottom-40">
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_LAEABF" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_LAEABF') }}">LA Economie - ABF</a></li>
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_LFEMFB" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_LFEMFB') }}">LF Economie - MFB</a></li>
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_LAGC" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_LAGC') }}">LA Gestion - Compta</a></li>
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_LAGGRH" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_LAGGRH') }}">LA Gestion - GRH</a></li>
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_LFGM" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_LFGM') }}">LF Gestion -Marketing</a></li>
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_LAIAG" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_LAIAG') }}">LA Informatique - AG</a></li>
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_LFIAG" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_LFIAG') }}">LF Informatique - AG</a></li>
+                                </ul>
+                                <!-- CATEGORIES END -->
+                            </div>
+                            <!-- END RIGHT SIDEBAR -->
+                        </div>
+                    </div>
+                    <div class="content-page">
+                        <div class="row">
+                            <h3><i class="icon-settings font-red"></i>
+                                <span class="caption-subject font-red sbold uppercase">Premier semestre</span></h3>
+                            <div class="col-md-9">
+                                <div class="portlet-body">
+                                    <div class="table-scrollable">
+                                        <table class="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th> UE</th>
+                                                <th> Enseignement</th>
+                                                <th> Coefficient</th>
+                                                <th>Crédit</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td> UE 1-1</td>
+                                                <td>Principes de gestion</td>
+                                                <td> 3</td>
+                                                <td> 5</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 1-2</td>
+                                                <td>Comptabilité financière I</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Introduction au droit</td>
+                                                <td> 2</td>
+                                                <td> 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 1-3</td>
+                                                <td>Mathématiques</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Microéconomie</td>
+                                                <td> 3</td>
+                                                <td> 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 1-4</td>
+                                                <td>Langue (Anglais)</td>
+                                                <td>1</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Aptitudes en TIC 1</td>
+                                                <td> 1</td>
+                                                <td> 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 1-5</td>
+                                                <td>Introduction au Marketing</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Mathématiques Financières</td>
+                                                <td> 2</td>
+                                                <td> 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Total</td>
+                                                <td></td>
+                                                <td> 20</td>
+                                                <td> 30</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-page">
+                        <div class="row">
+                            <h3><i class="icon-settings font-red"></i>
+                                <span class="caption-subject font-red sbold uppercase"> Deuxième semestre</span></h3>
+                            <div class="col-md-9">
+                                <div class="portlet-body">
+                                    <div class="table-scrollable">
+                                        <table class="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th> UE</th>
+                                                <th> Enseignement</th>
+                                                <th> Coefficient</th>
+                                                <th>Crédit</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>UE 2-1</td>
+                                                <td>Principe de gestion II</td>
+                                                <td>3</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 2-2</td>
+                                                <td>Macroéconomie</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Comptabilité Financière II</td>
+                                                <td> 3</td>
+                                                <td> 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 2-3</td>
+                                                <td>Statistiques Descriptives et Probabilité</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mathématique II:Algèbre</td>
+                                                <td> 2</td>
+                                                <td> 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 2-4</td>
+                                                <td>Langue (Anglais)</td>
+                                                <td>1</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Aptitudes en TIC II</td>
+                                                <td> 1</td>
+                                                <td> 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 2-5</td>
+                                                <td>GRH</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Environnement Institutionnel des Entreprises</td>
+                                                <td> 2</td>
+                                                <td> 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Total</td>
+                                                <td></td>
+                                                <td> 20</td>
+                                                <td> 30</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-page">
+                        <div class="row">
+                            <h3><i class="icon-settings font-red"></i>
+                                <span class="caption-subject font-red sbold uppercase"> Troisième semestre</span></h3>
+                            <div class="col-md-9">
+                                <div class="portlet-body">
+                                    <div class="table-scrollable">
+                                        <table class="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th> UE</th>
+                                                <th> Enseignement</th>
+                                                <th> Coefficient</th>
+                                                <th>Crédit</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>UE 3-1</td>
+                                                <td>Comptabilité intermédiaire</td>
+                                                <td>3</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 3-2</td>
+                                                <td>Droit des sociétés</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Fiscalité indirecte</td>
+                                                <td> 3</td>
+                                                <td> 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>UE 3-3</td>
+                                                <td>Comptabilité de gestion</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 3-4</td>
+                                                <td>Langue (Anglais)</td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aptitudes en TIC</td>
+                                                <td> 1</td>
+                                                <td> 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="3">UE 3-5</td>
+                                                <td>Fiscalité Directe</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gestion Financière</td>
+                                                <td> 3</td>
+                                                <td> 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>  Droit du Travail</td>
+                                                <td> 2</td>
+                                                <td> 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Total</td>
+                                                <td></td>
+                                                <td> 20</td>
+                                                <td> 30</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-page">
+                        <div class="row">
+                            <h3><i class="icon-settings font-red"></i>
+                                <span class="caption-subject font-red sbold uppercase"> Quatrieme semestre</span></h3>
+                            <div class="col-md-9">
+                                <div class="portlet-body">
+                                    <div class="table-scrollable">
+                                        <table class="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th> UE</th>
+                                                <th> Enseignement</th>
+                                                <th> Coefficient</th>
+                                                <th>Crédit</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>UE 4-1</td>
+                                                <td>Comptabilité avancée</td>
+                                                <td>3</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>UE 4-2</td>
+                                                <td>Contrôle interne</td>
+                                                <td>3</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 4-3</td>
+                                                <td>Comptabilité des Sociétés</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Elaboration des Etats Financiers</td>
+                                                <td> 3</td>
+                                                <td> 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 4-4</td>
+                                                <td>Langues (Anglais-Français)</td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Développement personnel</td>
+                                                <td> 1</td>
+                                                <td> 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>UE 4-5</td>
+                                                <td>Commissariat Comptable</td>
+                                                <td>2</td>
+                                                <td>4</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 4-6</td>
+                                                <td> Comptabilité Sectorielle</td>
+                                                <td> 2</td>
+                                                <td> 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Méthode Moderne de Comptabilité de Gestion</td>
+                                                <td> 1</td>
+                                                <td> 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Total</td>
+                                                <td></td>
+                                                <td> 20</td>
+                                                <td> 30</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-page">
+                        <div class="row">
+                            <h3><i class="icon-settings font-red"></i>
+                                <span class="caption-subject font-red sbold uppercase"> Cinquième semestre</span></h3>
+                            <div class="col-md-9">
+                                <div class="portlet-body">
+                                    <div class="table-scrollable">
+                                        <table class="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th> UE</th>
+                                                <th> Enseignement</th>
+                                                <th> Coefficient</th>
+                                                <th>Crédit</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>UE 5-1</td>
+                                                <td>Contrôle de gestion	</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>UE 5-2</td>
+                                                <td>Audit</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 5-3</td>
+                                                <td>Comptabilité Internationale</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Comptabilité des Groupes</td>
+                                                <td> 3</td>
+                                                <td> 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 5-4</td>
+                                                <td>Langues</td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Développement Personnel</td>
+                                                <td> 1</td>
+                                                <td> 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="3">UE 5-5</td>
+                                                <td>Droit des Entreprises en difficulté</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>  Comptabilité Informatisée</td>
+                                                <td> 0</td>
+                                                <td> 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Avantages Fiscaux</td>
+                                                <td> 0</td>
+                                                <td> 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">UE 5-6</td>
+                                                <td>PSE et Système d'Information</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Risk Management</td>
+                                                <td> 0</td>
+                                                <td> 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Total</td>
+                                                <td></td>
+                                                <td> 14</td>
+                                                <td> 18</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-page">
+                        <div class="row">
+                            <h3><i class="icon-settings font-red"></i>
+                                <span class="caption-subject font-red sbold uppercase">Sixième  semestre</span></h3>
+                            <div class="col-md-9">
+                                <div class="portlet-body">
+                                    <div class="table-scrollable">
+                                        <table class="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th> UE</th>
+                                                <th> Enseignement</th>
+                                                <th> Coefficient</th>
+                                                <th>Crédit</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td> UE 6-1</td>
+                                                <td>Stage professionnel</td>
+                                                <td> 1</td>
+                                                <td> 30</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Total</td>
+                                                <td></td>
+                                                <td> 1</td>
+                                                <td> 30</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END CONTENT -->
+            </div>
+            <!-- END SIDEBAR & CONTENT -->
+        </div>
+    </div>

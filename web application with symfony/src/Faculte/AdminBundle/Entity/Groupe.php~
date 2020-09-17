@@ -1,0 +1,62 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Groupe
+ *
+ * @ORM\Table(name="groupe")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\GroupeRepository")
+ */
+class Groupe
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="numGroupe", type="string", length=255)
+     */
+    private $numGroupe;
+    /**
+     * @ORM\ManyToOne(targetEntity="Niveau", inversedBy="groupe")
+     * @ORM\JoinColumn(name="niveau_id", referencedColumnName="id")
+     */
+    private $niveau;
+    /**
+     * @ORM\OneToMany(targetEntity="Etudiant", mappedBy="groupe",cascade={"remove"})
+     *
+     */
+    private $etudiants;
+    /**
+     * @ORM\OneToMany(targetEntity="EmploiTemps", mappedBy="groupe",cascade={"remove"})
+     *
+     */
+    private $emploistemps;
+
+
+
+    /**
+     * Convert object to string
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->getNumGroupe();
+
+    }
+
+
+
+
+}

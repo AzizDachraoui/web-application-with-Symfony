@@ -1,0 +1,53 @@
+  <!-- BEGIN RECENT WORKS -->
+            <div class="t3-module modulecours-mit " id="Mod98">
+                <div class="module-inner">
+                    <div class="module-ct">
+                        <div class="customcours-mit">
+                            <div class="col-md-9 ">
+                            {% if publiers is not empty %}
+                                {% for publier in publiers %}
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading bleuciel-doc bg-yellow-gold bg-font-yellow-gold">
+                                    <h3 class="panel-title"><span style="color: #ffffff;">Nouveau</span></h3>
+                                </div>
+                                <div class="panel-body">
+                                        {{ publier.commentaire }}
+                                </div>
+                                <div class="panel-footer " style="text-align: right;"><a href="{{ asset('files/publier/'~publier.id~'/'~publier.pathFile) }}">
+                                        <em class="glyphicon glyphicon-chevron-right font-yellow-gold"></em>&nbsp;</a>
+                                    <a href="{{ asset('files/publier/'~publier.id~'/'~publier.pathFile) }}" class="font-yellow-gold">Plus de détails&nbsp;</a>
+                                </div>
+                                </div>
+                            {% endfor %}
+                            {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END RECENT WORKS -->
+
+            <!-- TABS -->
+            <div class="col-md-3 tab-style-1">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab-1" data-toggle="tab">lICENCE</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane row fade in active" id="tab-1">
+                        <div class="col-md-9 col-sm-9">
+                            <li>LA Economie - ABF</li>
+                            <li>LF Economie - MFB</li>
+                            <li>LA Gestion - Compta</li>
+                            <li>LA Gestion - GRH</li>
+                            <li>LF Gestion -Marketing</li>
+                            <li>LF Gestion - Finance</li>
+                            <li>LF Gestion - Compta</li>
+                            <li>LF Informatique - AG</li>
+                            <li>LF Informatique - AG</li>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END TABS -->

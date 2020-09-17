@@ -1,0 +1,21 @@
+<select id="faculte_adminbundle_demanderattrapage_matiere" name="faculte_adminbundle_demanderattrapage[matiere]" required="required" class="form-control">
+        <option value="" selected="selected">Choisissez une matiere</option>
+        {%if matieres is not empty%}
+            {%for matiere in matieres %}
+                <option value="{{matiere.id}}" id="{{matiere.id}}">{{matiere.nom}}</option>
+            {%endfor%}
+        {%endif%}
+ </select>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        {% if demandeRattrapage is not empty %}
+        var idMatiere = {{demandeRattrapage.matiere.id }} ;
+
+        $("#faculte_adminbundle_demanderattrapage_matiere > option[value *= '"+idMatiere+"']").attr("selected",true);
+        {% endif %}
+    });
+</script>

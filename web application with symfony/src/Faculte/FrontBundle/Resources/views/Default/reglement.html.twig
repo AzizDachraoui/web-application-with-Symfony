@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.2.0
+Version: 3.4
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest (the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Head BEGIN -->
+<head>
+    <meta charset="utf-8">
+    <title>Metronic Frontend (with Top Bar)</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta content="Metronic Shop UI description" name="description">
+    <meta content="Metronic Shop UI keywords" name="keywords">
+    <meta content="keenthemes" name="author">
+
+    <meta property="og:site_name" content="-CUSTOMER VALUE-">
+    <meta property="og:title" content="-CUSTOMER VALUE-">
+    <meta property="og:description" content="-CUSTOMER VALUE-">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
+    <meta property="og:url" content="-CUSTOMER VALUE-">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Fonts START -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+    <!-- Fonts END -->
+
+    <!-- Global styles START -->
+    <link href="{{ asset('bundles/faculteFront/global/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Global styles END -->
+
+    <!-- Page level plugin styles START -->
+    <link href="{{ asset('bundles/faculteFront/global/plugins/fancybox/source/jquery.fancybox.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/slider-revolution-slider/rs-plugin/css/settings.css')}}" rel="stylesheet">
+    <!-- Page level plugin styles END -->
+
+    <!-- Theme styles START -->
+    <link href="{{ asset('bundles/faculteFront/global/css/components.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/pages/css/style-revolution-slider.css')}}" rel="stylesheet"><!-- metronic revo slider styles -->
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/style-responsive.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/themes/red.css')}}" rel="stylesheet" id="style-color">
+    <link href="{{ asset('bundles/faculteFront/frontend/layout/css/custom.css')}}" rel="stylesheet">
+    <!-- Theme styles END -->
+</head>
+<!-- Head END -->
+
+<!-- Body BEGIN -->
+<body class="corporate">
+<!-- BEGIN STYLE CUSTOMIZER -->
+<div class="color-panel hidden-sm">
+    <div class="color-mode-icons icon-color"></div>
+    <div class="color-mode-icons icon-color-close"></div>
+    <div class="color-mode">
+        <p>THEME COLOR</p>
+        <ul class="inline">
+            <li class="color-red current color-default" data-style="red"></li>
+            <li class="color-blue" data-style="blue"></li>
+            <li class="color-green" data-style="green"></li>
+            <li class="color-orange" data-style="orange"></li>
+            <li class="color-gray" data-style="gray"></li>
+            <li class="color-turquoise" data-style="turquoise"></li>
+        </ul>
+    </div>
+</div>
+<!-- END BEGIN STYLE CUSTOMIZER -->
+
+<!-- BEGIN TOP BAR -->
+<div class="pre-header">
+    <div class="container">
+        <div class="row">
+            <!-- BEGIN TOP BAR LEFT PART -->
+            <div class="col-md-6 col-sm-6 additional-shop-info">
+                <ul class="list-unstyled list-inline">
+                    <li><i class="fa fa-phone"></i><span>+216 71 90 52 48 </span></li>
+                    <li><i class="fa fa-envelope-o"></i><span>info@keenthemes.com</span></li>
+                </ul>
+            </div>
+            <!-- END TOP BAR LEFT PART -->
+            <!-- BEGIN TOP BAR MENU -->
+            <div class="col-md-6 col-sm-6 additional-nav">
+                <ul class="list-unstyled list-inline pull-right">
+                    <li><a href="{{ path('fos_user_security_login')}}"> Connexion </a></li>
+                </ul>
+            </div>
+            <!-- END TOP BAR MENU -->
+        </div>
+    </div>
+</div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+    <div class="container">
+        <a class="site-logo" href="index.html"><img src="{{ asset('bundles/faculteEnseignant/frontend/layout/img/logos/logo-corp-red.png')}}" alt="Metronic FrontEnd"></a>
+
+        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+        <!-- BEGIN NAVIGATION -->
+        <div class="header-navigation pull-right font-transform-inherit">
+            <ul>
+                <li><a href="{{ path('faculte_front_homepage') }}">Accueil</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle " data-toggle="dropdown" data-target="#" href="javascript:;">
+                        l'université
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ path('faculte_front_presentation') }}">Présentation</a></li>
+                        <li><a href="{{ path('faculte_front_organigramme') }}">Organigramme</a></li>
+                        <li><a href="{{ path('faculte_front_officiel') }}">Textes officiels</a></li>
+                        <li><a href="{{ path('faculte_front_chiffre') }}">l'université en Chiffres</a></li>
+                        <li><a href="{{ path('faculte_front_infrastructure') }}">Infrastructure technique</a></li>
+                        <li><a href="{{ path('faculte_front_observatoire') }}">Veille et observatoire</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#modal-inscription" data-toggle="modal">
+                        Diplômes
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="index.html">Licences<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('faculte_front_LAEABF') }}">LA Economie - ABF</a></li>
+                                <li><a href="{{ path('faculte_front_LFEMFB') }}">LF Economie - MFB</a></li>
+                                <li><a href="{{ path('faculte_front_LAGC') }}">LA Gestion - Compta</a></li>
+                                <li><a href="{{ path('faculte_front_LAGGRH') }}">LA Gestion - GRH</a></li>
+                                <li><a href="{{ path('faculte_front_LFGM') }}">LF Gestion -Marketing</a></li>
+                                <li><a href="{{ path('faculte_front_LAIAG') }}">LA Informatique - AG</a></li>
+                                <li><a href="{{ path('faculte_front_LFIAG') }}">LF Informatique - AG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-megamenu">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                        Recherches
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="{{ path('faculte_front_reglement') }}">Réglement des études</a></li>
+                        <li> <a href="{{ path('faculte_front_environnement') }}">Environnement des études</a></li>
+                        <li> <a href="{{ path('faculte_front_calendries') }}">Calendries de vacances </a></li>
+                        <li> <a href="{{ path('faculte_front_bourse') }}">Bourses</a></li>
+                        <li><a href="{{ path('faculte_front_activite') }}">Activités Estudiantines</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{{ path('faculte_front_galiere') }}">Galerie</a></li>
+                <li><a href="{{ path('faculte_front_contact') }}">Contact</a></li>
+
+
+
+                <!-- BEGIN TOP SEARCH -->
+                <li class="menu-search">
+                    <span class="sep"></span>
+                    <i class="fa fa-search search-btn"></i>
+                    <div class="search-box">
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search" class="form-control">
+                                <span class="input-group-btn">
+                      <button class="btn btn-primary" type="submit">Search</button>
+                    </span>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <!-- END TOP SEARCH -->
+            </ul>
+        </div>
+        <!-- END NAVIGATION -->
+    </div>
+</div>
+<!-- Header END -->
+
+    <div class="main">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="{{ path('faculte_front_homepage') }}">Accueil</a></li>
+                <li>Recherches</li>
+                <li class="active">Réglement des études</li>
+            </ul>
+            <!-- BEGIN SIDEBAR & CONTENT -->
+            <div class="row margin-bottom-40">
+                <!-- BEGIN CONTENT -->
+                <div class="col-md-12 col-sm-12">
+                    <h1>RÈGLEMENT DES ÉTUDES</h1>
+                    <div class="content-page">
+                        <div class="row">
+                            <!-- BEGIN LEFT SIDEBAR -->
+                            <div class="col-md-9 col-sm-9 blog-item">
+                                <div class="blog-item-img">
+                                    <!-- BEGIN CAROUSEL -->
+                                    <div class="front-carousel">
+                                        <div id="myCarousel" class="carousel slide">
+                                            <!-- Carousel items -->
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="{{ asset('bundles/faculteFront/frontend/pages/img/posts/img1.jpg')}}" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="{{ asset('bundles/faculteFront/frontend/pages/img/posts/img2.jpg')}}" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="{{ asset('bundles/faculteFront/frontend/pages/img/posts/img3.jpg')}}" alt="">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="{{ asset('bundles/faculteFront/frontend/pages/img/posts/img4.jpg')}}" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Carousel nav -->
+                                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                                                <i class="fa fa-angle-left"></i>
+                                            </a>
+                                            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- END CAROUSEL -->
+                                </div>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h3 class="font-yellow-crusta">Assiduité :</h3>
+                                        <p>La présence des étudiants aux enseignements, aux travaux dirigés et aux travaux pratiques est obligatoire. L’étudiant est tenu d’arriver à l’heure à toute séance de cours, travaux dirigés ou travaux pratiques. Tout retard peut entraîner un refus d’assister à la séance de cours, travaux dirigés ou travaux pratiques suivante.</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h3 class="font-yellow-crusta">L’absence :</h3>
+                                        <p>Le nombre d’absence et les délais de justifications sont fixés par le conseil de l’établissement, toute absence à une séance de TP doit être justifiée dans les 7 jours qui suivent l’absence auprès du responsable concerné qui envoie au responsable de la filière la justification. Le cas échéant, un zéro est affecté à la note de ce TP. Si l’absence est justifiée, la séance de TP doit être refaite (dans la mesure du possible) selon un emploi du temps établi par le responsable du module. L’étudiant qui s’absente sans justification à trois séances de TP ou plus d’un même module ne pourra pas le valider.</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h3 class="font-yellow-crusta">Fraudes aux contrôles :</h3>
+                                        <p>Dans le cas où les documents ne sont pas autorisés, les étudiants déposent tous leurs documents avant la distribution des sujets d’examen. Tout document trouvé à proximité des étudiants pendant le déroulement de l’épreuve ou tout type de communication des étudiants entre eux, entraîne l’établissement d’un rapport de fraude dûment signé par le(s) responsable. Lors de la constatation d’une fraude et lorsque les formalités administratives ont été suivies, l’étudiant, après délibération d’un conseil de discipline mis en place à l’occasion, pourra écoper des sanctions suivantes, par ordre de gravité de la faute commise :</p>
+                                        <li>Un avertissement écrit.</li>
+                                        <li>Un blâme écrit.</li>
+                                        <li>Un zéro au module accompagné d’un blâme écrit.</li>
+                                        <li>Exclusion temporaire de l’établissement pour une durée fixée par le conseil de l’établissement, avec possibilité de participer aux contrôles.</li>
+                                        <li>Proposition d’exclusion définitive.</li>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h3 class="font-yellow-crusta">Consultation des copies :</h3>
+                                        <p>Tout étudiant a le droit de consulter sa copie en présence de l’enseignant responsable de l’épreuve concernée et de l’enseignant ayant corrigé la copie à condition de faire une demande explicite au responsable de la filière. La consultation de la copie ne pourra se faire qu’après la proclamation des résultats et dans un délai de 24 heures. Après avoir déposé la demande dans les délais, l’étudiant a  le droit de consulter sa copie dans un délai maximum de deux semaines.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END LEFT SIDEBAR -->
+
+                            <!-- BEGIN RIGHT SIDEBAR -->
+                            <div class="col-md-3 col-sm-3 blog-sidebar">
+                                <!-- CATEGORIES START -->
+                                <h2 class="no-top-space">Recherches</h2>
+                                <ul class="nav sidebar-categories margin-bottom-40">
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_reglement" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_reglement') }}">Réglement des études</a></li>
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_environnement" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_environnement') }}">Environnement des études</a></li>
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_calendries" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_calendries') }}">Calendries de vacances</a></li>
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_bourse" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_bourse') }}">Bourses</a></li>
+                                    <li class="{% if app.request.attributes.get('_route') == "faculte_front_activite" %} active {% endif %}">
+                                        <a href="{{ path('faculte_front_activite') }}">Activités Estudiantines</a></li>
+                                </ul>
+                                <!-- CATEGORIES END -->
+                            </div>
+                            <!-- END RIGHT SIDEBAR -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END CONTENT -->
+            </div>
+            <!-- END SIDEBAR & CONTENT -->
+        </div>
+    </div>
+

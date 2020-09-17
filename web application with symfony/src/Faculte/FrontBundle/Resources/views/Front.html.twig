@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.2.0
+Version: 3.4
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest (the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Head BEGIN -->
+<head>
+    <meta charset="utf-8">
+    <title>Metronic One Page</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta content="Metronic Shop UI description" name="description">
+    <meta content="Metronic Shop UI keywords" name="keywords">
+    <meta content="keenthemes" name="author">
+
+    <meta property="og:site_name" content="-CUSTOMER VALUE-">
+    <meta property="og:title" content="-CUSTOMER VALUE-">
+    <meta property="og:description" content="-CUSTOMER VALUE-">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
+    <meta property="og:url" content="-CUSTOMER VALUE-">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Fonts START -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Pathway+Gothic+One|PT+Sans+Narrow:400+700|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+    <!-- Fonts END -->
+    <!-- Global styles BEGIN -->
+    <link href="{{ asset('bundles/faculteFront/global/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/global/plugins/slider-revolution-slider/rs-plugin/css/settings.css')}}" rel="stylesheet">
+    <!-- Global styles END -->
+    <!-- Page level plugin styles BEGIN -->
+    <link href="{{ asset('bundles/faculteFront/global/plugins/fancybox/source/jquery.fancybox.css')}}" rel="stylesheet">
+    <!-- Page level plugin styles END -->
+    <!-- Theme styles BEGIN -->
+    <link href="{{ asset('bundles/faculteFront/global/css/components.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/onepage/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/onepage/css/style-responsive.css')}}" rel="stylesheet">
+    <link href="{{ asset('bundles/faculteFront/frontend/onepage/css/themes/red.css')}}" rel="stylesheet" id="style-color">
+    <link href="{{ asset('bundles/faculteFront/frontend/onepage/css/custom.css')}}" rel="stylesheet">
+    <!-- Theme styles END -->
+</head>
+<!--DOC: menu-always-on-top class to the body element to set menu on top -->
+<body>
+<!-- BEGIN STYLE CUSTOMIZER -->
+<div class="color-panel">
+    <div class="color-mode-icons icon-color"></div>
+    <div class="color-mode-icons icon-color-close"></div>
+    <div class="color-mode">
+        <p>THEME COLOR</p>
+        <ul class="inline">
+            <li class="color-red current color-default" data-style="red"></li>
+            <li class="color-blue" data-style="blue"></li>
+            <li class="color-green" data-style="green"></li>
+            <li class="color-orange" data-style="orange"></li>
+            <li class="color-gray" data-style="gray"></li>
+            <li class="color-turquoise" data-style="turquoise"></li>
+        </ul>
+        <p>MENU POSITION</p>
+        <select class="form-control menu-pos">
+            <option value="bottom">Bottom</option>
+            <option value="top">Top</option>
+        </select>
+    </div>
+</div>
+<!-- END BEGIN STYLE CUSTOMIZER -->
+<!-- Header BEGIN -->
+<div class="header header-mobi-ext" style="background: #E87E04;">
+    <div class="tp-caption large_text customin customout start">
+    <div class="container">
+        <div class="row">
+            <!-- Logo BEGIN -->
+            <div class="col-md-2 col-sm-2">
+                <div class="caption lft slide_title slide_item_left" style="margin-top: -20px;">
+                    <a class="scroll site-logo" href="#promo-block"><img src="{{ asset('bundles/faculteFront/frontend/onepage/img/logo/logoMed.png')}}" alt="Metronic One Page"style="width: 46%;margin-left: 100%;" ></a>
+                </div>
+                </div>
+            <!-- Logo END -->
+            <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+            <!-- Navigation BEGIN -->
+            <div class="col-md-10 pull-right">
+                <ul class="header-navigation">
+                    <li class="current"><i class="fa fa-home fa-2"></i>Accueil</li>
+                    <li><a href="#about"><div style="color:White"> Pourquoi choisir Med Training? </div></a></li>
+                    <li><a href="#inscription"><div style="color:White"> Inscription </div></a></li>
+                    <li><a href="#services"><div style="color:White">Formation</div></a></li>
+                    <li><a href="#team"><div style="color:White"> Langues</div></a></li>
+                    <li><a href="#portfolio"><div style="color:White"> Inscription</div></a></li>
+                    <li><a href="#contact"><div style="color:White"> <a href="{{ path('faculte_front_contact') }}">Contact</a></div></a></li>
+                </ul>
+            </div>
+            <!-- Navigation END -->
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Header END -->
+<!-- Promo block BEGIN -->
+<div class="promo-block" id="promo-block">
+    <div class="tp-banner-container">
+        <div class="tp-banner" >
+            <ul>
+                <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-delay="9400" class="slider-item-1">
+                    <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/silder/slide1.jpg')}}" alt="" data-bgfit="cover" style="opacity:0.4 !important;" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <div class="tp-caption large_text customin customout start"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="center"
+                         data-voffset="60"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="1000"
+                         data-start="500"
+                         data-easing="Back.easeInOut"
+                         data-endspeed="300">
+                        <div class="caption lft slide_title slide_item_left" style="margin-top: -35px;color: #f77822"
+                             data-x="-100"
+                             data-y="-300"
+                             data-speed="400"
+                             data-start="1500"
+                             data-easing="easeOutExpo">
+                             Main à main on atteind votre but
+                        </div>
+                    </div>
+                </li>
+                <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-delay="9400" class="slider-item-1">
+                    <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/silder/slide3.jpg')}}" alt="" data-bgfit="cover" style="opacity:0.4 !important;" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <div class="tp-caption large_text customin customout start"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="center"
+                         data-voffset="60"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="1000"
+                         data-start="500"
+                         data-easing="Back.easeInOut"
+                         data-endspeed="300">
+
+                        <div class="caption lfr slide_title" style="margin-top: -500px;color: #f77822"
+                             data-x="-650"
+                             data-y="90"
+                             data-speed="400"
+                             data-start="1000"
+                             data-easing="easeOutExpo">
+                             Your satisfaction is our<br> objective
+                        </div>
+                    </div>
+
+                </li>
+                <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-delay="9400" class="slider-item-1">
+                    <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/silder/slide4.jpg')}}" alt="" data-bgfit="cover" style="opacity:0.4 !important;" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <div class="tp-caption large_text customin customout start"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="center"
+                         data-voffset="60"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="1000"
+                         data-start="500"
+                         data-easing="Back.easeInOut"
+                         data-endspeed="300">
+
+                        <div class="caption lft slide_title_white slide_item_left"style="margin-top: -500px;"
+                             data-x="30"
+                             data-y="90"
+                             data-speed="400"
+                             data-start="1500"
+                             data-easing="easeOutExpo">
+                            We will open the world of<br> knowledge for you
+                        </div>
+                    </div>
+                </li>
+                <li data-transition="fadefromright" data-slotamount="5" data-masterspeed="700" data-delay="9400" class="slider-item-2">
+                    <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/silder/Slide2_bg.jpg')}}" alt="slidebg2" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <div class="tp-caption large_text customin customout start"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="center"
+                         data-voffset="60"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="1000"
+                         data-start="500"
+                         data-easing="Back.easeInOut"
+                         data-endspeed="300">
+
+                        <div class="caption lfr slide_title" style="margin-top: -500px;"
+                             data-x="-650"
+                             data-y="200"
+                             data-speed="400"
+                             data-start="1500"
+                             data-easing="easeOutExpo">
+                            Hand in hand we will achieve your gools
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Promo block END -->
+<!-- About block BEGIN -->
+<div class="cadre-noire content content-center" style=" background: #000;padding: 30px;">
+<div class="about-block content content-center" id="inscription">
+    <div class="container">
+        <h2><div class="font-yellow-gold text_inscription   wow fadeInUp  animated" data-wow-duration="2s" data-wow-delay="0s" data-wow-animation-name="fadeInDown" style="margin-top:-5%;visibility: visible; animation-duration: 2s; animation-delay: 0s; animation-name: fadeInUp;">
+            Inscription
+        </div></h2>
+        <h1><div class="font-white text_inscription  wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0s" data-wow-animation-name="fadeInUp" style="visibility: visible; animation-duration: 2s; animation-delay: 0s; animation-name: fadeInUp;">
+            Inscrivez vous dès aujourd'hui !
+            </div></h1>
+        <div class="btn_inscription  wow fadeInUp  animated" data-wow-duration="2s" data-wow-delay="0s" data-wow-animation-name="fadeInUp" style="visibility: visible; animation-duration: 2s; animation-delay: 0s; animation-name: fadeInUp;">
+                <a href="#modal-inscription" data-toggle="modal" target="_blank" class="btn btn-primary col-md-5" style="margin-left: 30%;padding: 10px;">Accédez</a>
+        </div>
+    </div>
+</div>
+</div>
+{{ render(controller('FaculteFrontBundle:Inscription:inscription')) }}
+<!-- About block END -->
+<!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+
+<div class="promo-block" id="promo-block">
+    <div class="about content content-center" id="about">
+    <div class="tp-banner-container">
+        <div class="tp-banner" >
+            <ul>
+                <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-delay="9400" class="slider-item-1">
+                    <img src="{{ asset('bundles/faculteFront/frontend/pages/img/revolutionslider/bg1.jpg')}}" alt="" data-bgfit="cover" style="opacity:0.4 !important;" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <div class="tp-caption large_text customin customout start"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="center"
+                         data-voffset="60"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="1000"
+                         data-start="500"
+                         data-easing="Back.easeInOut"
+                         data-endspeed="300">
+
+                        <div class="caption lfr slide_title" style="margin-top: -555px;"
+                             data-x="-700"
+                             data-y="150"
+                             data-speed="400"
+                             data-start="1500"
+                             data-easing="easeOutExpo">
+                            Présentation de centre de formation professionnelle en Tunisie
+                        </div>
+                        <div class="caption lfr slide_item_right"style="margin-top: -200px;"
+                             data-x="-0.5"
+                             data-y="105"
+                             data-speed="1200"
+                             data-start="1500"
+                             data-easing="easeOutBack">
+                            <img src="{{ asset('bundles/faculteFront/frontend/pages/img/revolutionslider/mac.png')}}" alt="Image 1"style="width: 10%;
+                             border: 5px solid #fff;
+                             border-radius: 20px;
+                             margin-top: -200px;
+                             margin-left: 18%;"
+                            >
+                        </div>
+                        <div class="caption lfb slide_item_right"style="margin-top: -300px;"
+                             data-x="-700"
+                             data-y="-0.5"
+                             data-speed="1200"
+                             data-start="1500"
+                             data-easing="easeOutBack">
+                            <h4><span style="margin-left: -15%">MED Training  offre des cours motivants et des professeurs dynamiques, motivants,</span><br><span style="margin-left: -7%"> ludiques, et efficaces, et les cours sont élaborés sur des méthodes modernes et interactives</span><br><span style="margin-left: -47%"> qui permettent d’obtenir des résultats rapidement.</span><br><span style="margin-left: -13%"> Chaque participant est placé dans une classe correspondant à son niveau linguistique.</span><br><span style="margin-left: -10%"> Tous les professeurs de l’école sont choisis pour leur talent d’enseignant, leur expérience</span> <br>et leur attention  qu’ils savent accorder à chaque étudiant… vous ferez des progrès sans<br> même vous en rendre compte !
+                               Large choix d’activités passionnantes captivantes,<br> enrichissantes, variées, MED Training favorise les rencontres, les amitiés, et la pratique<br> « sur le terrain » de la langue étudiée.
+                           </h4>
+                            <h3>Contrôle qualité régulier</h3><br>
+                            <h4 style="margin-top: -50px;">
+                                Chez  MED Training, nous sommes assurés de vous proposer les meilleurs  services et de vous offrir<br> un service de conseil compétant  et personnalisé ! <br> En effet, les visiteurs réguliers des membres de notre équipe permettent d’avoir un contrôle rigoureux<br> de la qualité des programmes.<br></h4>
+                                <h3>Excellent rapports qualité-prix-réductions</h3><br>
+                                <h4 style="margin-top: -50px;">
+                               Nos prix comprennent les cours, ainsi que toutes les activités et les excursions mentionnées sous<br> la rubrique « inclus dans la prix » de chaque programme.<br> Nous proposons aussi des réductions intéressantes :<br>
+                               -	Réduction-groupes (dés 08 personnes) : prix spéciaux.
+
+                           </h4>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+
+
+<!-- Services block END -->
+<!-- Message block BEGIN -->
+<!-- Message block END -->
+<!-- Testimonials block BEGIN -->
+<div class="testimonials-block content content-center margin-bottom-65">
+    <div class="container">
+        <h2><div style="color: black">Actualités</div></h2>
+        {% if publiers is not empty %}
+        <div class="carousel slide" data-ride="carousel" id="testimonials-block">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <!-- Carousel items -->
+
+                    {% for publier in publiers %}
+                        <div class="{% if loop.index==1 %} active {% endif %} item">
+                            <blockquote>
+                                <span class="font-red-thunderbird">{{ publier.titre }}</span><br>
+                                {{ publier.description}}
+                                <div style="text-align: center;">
+                                    <a href="{{ asset('files/publier/'~publier.id~'/'~publier.pathFile) }}"
+                                       class="font-yellow-gold">Plus de détails</a>
+
+                                    <a href="{{ path('faculte_front_publier',{'idPublier':publier.id}) }}"
+                                       style="color:blue;"><i class="fa fa-edit font-white"></i></a></span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    {% endfor %}
+
+            </div>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#testimonials-block" data-slide-to="0" class="active"></li>
+                <li data-target="#testimonials-block" data-slide-to="1" ></li>
+                <li data-target="#testimonials-block" data-slide-to="2"></li>
+                <li data-target="#testimonials-block" data-slide-to="3"></li>
+                <li data-target="#testimonials-block" data-slide-to="4"></li>
+            </ol>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<!-- Testimonials block END -->
+<!-- Portfolio block BEGIN -->
+<div class="portfolio-block content content-center" id="portfolio">
+    <div class="container">
+        <h2 class="margin-bottom-50">Galerie des <strong>images</strong></h2>
+    </div>
+    <div class="row">
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/2.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/2.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/6.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/6.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/12.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/12.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/11.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/11.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/4.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/4.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/1.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/1.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/3.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/3.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/5.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/5.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/8.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/8.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/10.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/10.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/9.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/9.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+        <div class="item col-md-2 col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/7.jpg')}}" alt="NAME" class="img-responsive">
+            <a href="{{ asset('bundles/faculteFront/frontend/onepage/img/portfolio/7.jpg')}}" class="zoom valign-center">
+                <div class="valign-center-elem">
+                    <b>Details</b>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Portfolio block END -->
+<!-- Choose us block BEGIN -->
+<div class="choose-us-block content text-center margin-bottom-40" id="benefits">
+    <div class="container">
+        <h2>Nos Programmes</h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 text-left">
+                <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/choose-us.png')}}" alt="Why to choose us" class="img-responsive"
+                style=" border: 5px solid #95a5a6;
+                             margin-top: 5%">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 text-left">
+                <div class="panel-group" id="accordion1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_1">Langues  vivantes</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Med Training vous donne des cours linguistiques pour tous les langues vivantes qui se basent sur le cadre européen commun qui aident sur le marché de travail, pour l’inscription de l’université et autres institutions supérieurs, les demandes de visa et les formations pour les entreprises.</p>
+                                <p>MED Training est une Institution  agréé par l’état sous N°21-203-14 et en partenariat avec EIE Educational Group of Malta et Assosiaciation Al Afdhal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_2">Informatique</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Connaissance des divers mode de codage et de représentation numérique de l’information, du fonctionnement d’internet et des bases de la publication sur la toile, initiation et de traitement de données : tableur, programmation, SQL (sigle de Structured Query Language , un français langage de requête structurée).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_3">Economie et Gestion</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Connaissance solide en économie, en gestion, en mathématiques statistiques, mathématiques financières, en comptabilité, en droit (droit des entreprises, des associations, droit fiscal, institution publique,…) La création, le fonctionnement et développement d’entreprises requièrent.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_4">Administration d’affaire</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>L’application de principes, de méthodes et d’outils qui relèvent de la spécialité Gestion, une connaissance générale des principes et des méthodes utilisés  en gestion, faire acquérir des compétences opérationnelles des outils et des pratiques de gestion, et valoriser ces connaissances et des compétences et ces compétences dans la vie professionnelle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_5"> Infographie</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Développer vos connaissances sur le monde du graphisme<br>
+                                    Apprendre les règles théorique et pratique de la création graphique (couleurs, typographe, ergonome…)<br>
+                                    Maitriser les pratiques de la chaine graphique<br>
+                                    Savoir utiliser les logiciels incontournables en infographie : Photoshop, Illustrateur, In design Flash et Acrobat.<br>
+                                    Vous entrainez à créer une identité visuelle et la maquette d’une magasine.
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Choose us block END -->
+<!-- Testimonials block BEGIN -->
+<div class="testimonials-block content content-center margin-bottom-65">
+    <div class="container">
+        <h2><div style="color: black"> Nos partenaires</div></h2>
+        <h4>Dans l’accomplissement de ses divers services, <strong>MED</strong>Training, et depuis des années, construit des partenariats afin d’offrir à ses clients le meilleur service en développant des synergies gagnantes.
+        </h4>
+    </div>
+</div>
+<!-- Testimonials block END -->
+<!-- Partners block BEGIN -->
+<div class="partners-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/partners/group.png')}}" alt="cisco" style="width: 60%; margin-left: 160%">
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/partners/tunisia.png')}}" alt="gamescast" style="width: 60%; margin-left: 180%">
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <img src="{{ asset('bundles/faculteFront/frontend/onepage/img/partners/ngreen.png')}}" alt="ngreen" style="width: 60%; margin-left: 200%">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Partners block END -->
+<!-- BEGIN PRE-FOOTER -->
+<div class="pre-footer" id="contact">
+    <div class="container">
+        <div class="row">
+            <!-- BEGIN BOTTOM ABOUT BLOCK -->
+            <!-- END BOTTOM ABOUT BLOCK -->
+            <!-- BEGIN TWITTER BLOCK -->
+            <div class="col-md-4 col-sm-6 pre-footer-col">
+                <h2 class="margin-bottom-0">Latest Tweets</h2>
+                <a class="twitter-timeline" href="https://twitter.com/twitterapi" data-tweet-limit="2" data-theme="dark" data-link-color="#57C8EB" data-widget-id="455411516829736961" data-chrome="noheader nofooter noscrollbar noborders transparent">Loading tweets by @keenthemes...</a>
+            </div>
+            <!-- END TWITTER BLOCK -->
+            <div class="col-md-4 col-sm-6 pre-footer-col">
+                <!-- BEGIN BOTTOM CONTACTS -->
+                <h2>Our Contacts</h2>
+                <address class="margin-bottom-20">
+                    35, Lorem Lis Street, Park Ave<br>
+                    California, US<br>
+                    Phone: 300 323 3456<br>
+                    Fax: 300 323 1456<br>
+                    Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
+                    Skype: <a href="skype:metronic">metronic</a>
+                </address>
+                <!-- END BOTTOM CONTACTS -->
+                <div class="pre-footer-subscribe-box">
+                    <h2>Newsletter</h2>
+                    <form action="javascript:void(0);">
+                        <div class="input-group">
+                            <input type="text" placeholder="youremail@mail.com" class="form-control">
+                            <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+                </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PRE-FOOTER -->
+<!-- BEGIN FOOTER -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- BEGIN COPYRIGHT -->
+            <div class="col-md-6 col-sm-6">
+                <div class="copyright">2014 © Metronic One Page. ALL Rights Reserved.</div>
+            </div>
+            <!-- END COPYRIGHT -->
+            <!-- BEGIN SOCIAL ICONS -->
+            <div class="col-md-6 col-sm-6 pull-right">
+                <ul class="social-icons">
+                    <li><a class="rss" data-original-title="rss" href="javascript:void(0);"></a></li>
+                    <li><a class="facebook" data-original-title="facebook" href="javascript:void(0);"></a></li>
+                    <li><a class="twitter" data-original-title="twitter" href="javascript:void(0);"></a></li>
+                    <li><a class="googleplus" data-original-title="googleplus" href="javascript:void(0);"></a></li>
+                    <li><a class="linkedin" data-original-title="linkedin" href="javascript:void(0);"></a></li>
+                    <li><a class="youtube" data-original-title="youtube" href="javascript:void(0);"></a></li>
+                    <li><a class="vimeo" data-original-title="vimeo" href="javascript:void(0);"></a></li>
+                    <li><a class="skype" data-original-title="skype" href="javascript:void(0);"></a></li>
+                </ul>
+            </div>
+            <!-- END SOCIAL ICONS -->
+        </div>
+    </div>
+</div>
+<!-- END FOOTER -->
+<a href="#promo-block" class="go2top scroll"><i class="fa fa-arrow-up"></i></a>
+<!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<![endif]-->
+<!-- Load JavaScripts at the bottom, because it will reduce page load time -->
+<!-- Core plugins BEGIN (For ALL pages) -->
+<script src="{{ asset('bundles/faculteFront/global/plugins/jquery.min.js')}}" type="text/javascript"></script>
+<script src="{{ asset('bundles/faculteFront/global/plugins/jquery-migrate.min.js')}}" type="text/javascript"></script>
+<script src="{{ asset('bundles/faculteFront/global/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
+<!-- Core plugins END (For ALL pages) -->
+<!-- BEGIN RevolutionSlider -->
+<script src="{{ asset('bundles/faculteFront/global/plugins/slider-revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js')}}" type="text/javascript"></script>
+<script src="{{ asset('bundles/faculteFront/global/plugins/slider-revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js')}}" type="text/javascript"></script>
+<script src="{{ asset('bundles/faculteFront/frontend/onepage/scripts/revo-ini.js')}}" type="text/javascript"></script>
+<!-- END RevolutionSlider -->
+<!-- Core plugins BEGIN (required only for current page) -->
+<script src="{{ asset('bundles/faculteFront/global/plugins/fancybox/source/jquery.fancybox.pack.js')}}" type="text/javascript"></script><!-- pop up -->
+<script src="{{ asset('bundles/faculteFront/global/plugins/jquery.easing.js')}}"></script>
+<script src="{{ asset('bundles/faculteFront/global/plugins/jquery.parallax.js')}}"></script>
+<script src="{{ asset('bundles/faculteFront/global/plugins/jquery.scrollTo.min.js')}}"></script>
+<script src="{{ asset('bundles/faculteFront/frontend/onepage/scripts/jquery.nav.js')}}"></script>
+<!-- Core plugins END (required only for current page) -->
+<!-- Global js BEGIN -->
+<script src="{{ asset('bundles/faculteFront/frontend/onepage/scripts/layout.js')}}" type="text/javascript"></script>
+<script>
+    $(document).ready(function() {
+        Layout.init();
+    });
+</script>
+<!-- Global js END -->
+</div>
+</body>
+</html>

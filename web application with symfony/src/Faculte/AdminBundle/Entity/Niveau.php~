@@ -1,0 +1,73 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+/**
+ * Niveau
+ *
+ * @ORM\Table(name="niveau")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\NiveauRepository")
+ */
+class Niveau
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="numero_niveau", type="string", length=255)
+     */
+    private $numeroNiveau;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Filiere", inversedBy="niveau")
+     * @ORM\JoinColumn(name="filiere_id", referencedColumnName="id")
+     */
+    private $filiere;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Groupe", mappedBy="niveau",cascade={"remove"})
+     *
+     */
+    private $groupes;
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="Resultat", mappedBy="groupe",cascade={"remove"})
+     *
+     */
+    private $resultats;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Matiere", mappedBy="niveaux",cascade={"remove"})
+     **/
+    protected $matieres;
+
+
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Cour", mappedBy="niveaux",cascade={"remove"})
+     **/
+    protected $cours;
+
+    /**
+     * Convert object to string
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string)$this->getNumeroNiveau();
+
+    }
+
+
+}

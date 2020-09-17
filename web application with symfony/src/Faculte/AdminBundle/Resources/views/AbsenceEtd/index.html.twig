@@ -1,0 +1,78 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <h1>Gestion des absences des étudiants</h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a>
+                </li>
+                <li class="active">liste des absences des étudiants
+                </li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <div class="caption">
+                                <i class="fa fa-calendar-o font-green"></i>
+                                <span class="caption-subject font-green bold uppercase">liste des absences des étudiants</span>
+                            </div>
+                        </div>
+                        <div class="actions">
+
+                        </div>
+                    </div>
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                    <div class="portlet light ">
+                        <div class="portlet-title">
+                            <div class="caption font-dark">
+                                    <select id="search_matiere" name="search_matiere" class="form-control">
+                                        <option value="">Choisissez une matière</option>
+                                    {% for matiere in matieres %}
+                                        <option value="{{ matiere.id}}">{{ matiere.nom}}</option>
+                                        {% endfor %}
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="portlet-body" id="table_etudiant">
+                        </div>
+                    </div>
+                    <!-- END EXAMPLE TABLE PORTLET-->
+
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+
+
+{% endblock %}
+{% block js %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#search_matiere").change(function () {
+                var idMatiere = $(this).val();
+                var idGroupe = {{ groupe.id }}
+                var dataString = {idMatiere: idMatiere,idGroupe:idGroupe};
+                $.ajax
+                ({
+                    type: "POST",
+                    url: "{{ path('faculte_admin_search_absence_etudiant') }}",
+                    data: dataString,
+                    success: function (response) {
+                        $("#table_etudiant").html(response);
+                    }
+                });
+            });
+        });
+    </script>
+{% endblock %}

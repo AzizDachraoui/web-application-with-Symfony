@@ -1,0 +1,115 @@
+{% extends "FaculteEnseignantBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="col-md-9 col-sm-9">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a>
+                </li>
+                <li class="active">liste des cours
+                </li>
+            </ol>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title">
+                    <a href="#accordion1_1" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+                        Liste des cours
+                    </a>
+                </h5>
+            </div>
+            <div class="panel-collapse collapse in" id="accordion1_1">
+                <div class="panel-body">
+                    <div class="portlet light ">
+                        <div class="caption font-dark">
+                            <div class="col-md-2 col-sm-3">
+                                <div class="caption font-dark">
+                                    <a  class="btn green-sharp btn-outline  btn-block"  href="{{ path('faculte_enseignant_ajouter_cour')}}"><i class="fa fa-plus-circle "> Cours</i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tools">
+                        </div>
+
+                        <div class="portlet-body">
+                            <table class="table table-striped table-bordered table-hover"  id="sample_1">
+                                <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Matiere</th>
+                                    <th>Niveau</th>
+                                    <th>Filiére</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% if Cours is not empty %}
+                                    {% for Cour in Cours %}
+                                        {% for niveau in Cour.niveaux %}
+
+                                            <tr>
+
+                                                <td>
+                                                    <a href="{{ asset('files/cours/'~Cour.id~'/'~Cour.pathFile) }}">{{ Cour.nom }}</a>
+                                                </td>
+                                                <td>{% if Cour.matiere is not empty %}{{ Cour.matiere.nom }} {% endif %}</td>
+
+                                                <td>
+                                                    {{ niveau.numeroNiveau }}
+
+                                                </td>
+                                                <td>
+                                                    {{ niveau.filiere.nom }}
+
+                                                </td>
+
+                                                <td> <span class="label label-mn label-primary">
+                                    <a href="{{ path('faculte_enseignant_modifier_cour',{'idC':Cour.id}) }}"
+                                       style="color:blue;"><i class="fa fa-edit font-white"></i></a></span>
+
+                                                    <a href="#modal-delete{{ Cour.id }}"
+                                                       data-toggle="modal"
+                                                       style="color:blue;"><span
+                                                                class="label label-mn btn red-thunderbird"><i
+                                                                    class="fa fa-trash-o font-white"></i></span></a>
+                                                </td>
+                                            </tr>
+                                            <div id="modal-delete{{ Cour.id }}" class="modal fade" role="dialog"
+                                                 aria-labelledby="myModalLabel10" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-hidden="true"></button>
+                                                            <h4 class="modal-title">Supprimer Cours </h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p style="color:red">Voulez-vous supprimer ce cours
+                                                                "{{ Cour.nom }}"?</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <a href="{{ path('faculte_enseignant_supprimer_cour',{'idC':Cour.id}) }}"
+                                                               class="btn green"> Enregistrer</a>
+                                                            <button class="btn default" data-dismiss="modal"
+                                                                    aria-hidden="true">Annuler
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        {% endfor %}
+                                    {% endfor %}
+                                {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

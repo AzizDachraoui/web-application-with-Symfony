@@ -1,0 +1,35 @@
+<div class="btn-group-notification btn-group" id="header_notification_bar">
+    <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"
+            data-hover="dropdown" data-close-others="true">
+        <i class="icon-bell"></i>
+        <span class="badge">{{nbrNonConsulterDemande}}</span>
+    </button>
+    <ul class="dropdown-menu-v2">
+        <li class="external">
+            <h3>
+                <span class="bold">{{nbrNonConsulterDemande}} </span> notifications</h3>
+            <a href="#"></a>
+        </li>
+        <li>
+            <ul class="dropdown-menu-list scroller" style="height: 250px; padding: 0;"
+                data-handle-color="#637283">
+                {% if nonConsulterdemandes is not empty %}
+                    {% for nonConsulterdemande in nonConsulterdemandes %}
+                <li>
+                    <a href="javascript:;">
+                                                        <span class="details">
+                                                            <span class="label label-sm label-icon label-warning">
+                                                                <i class="fa fa-bell-o"></i>
+                                                            </span>
+                                                            {{ nonConsulterdemande.nom }}
+                                                            {{ nonConsulterdemande.prenom}}
+                                                        </span>
+                        <span class="time"> {{ nonConsulterdemande.profession }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+            {% endif %}
+            </ul>
+        </li>
+    </ul>
+</div>

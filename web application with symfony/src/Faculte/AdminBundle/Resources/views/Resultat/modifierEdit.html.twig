@@ -1,0 +1,36 @@
+{{ form_start(form,{'action':path('faculte_admin_modifier_resultats_file',{'idR':resultat.id}),'method': 'POST','attr': {'class': 'form-horizontal'} }) }}
+
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title"> Modifier Fichier</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-body col-md-15">
+            <div class="form-group">
+                <div class="col-md-12 " style="color:red;">
+                    {{ form_errors(form) }}
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-12">
+                <a href="{{ asset('files/resultats/'~resultat.id~'/'~resultat.pathFile) }}"> Consulter ancien fichier</a>
+            </div>
+            <br>
+            <div class="col-md-12">
+            {{ form_label(form.pathFile,null, {'label_attr': {'class': 'col-md-3 control-label'} }) }}</label>
+            <div class="col-md-3">
+                {{ form_widget(form.pathFile ) }}
+            </div>
+            </div>
+        </div>
+        {{ form_rest(form) }}
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn green"  type="submit"  >Enregistrer</button>
+        <button class="btn default" data-dismiss="modal" aria-hidden="true">Fermer</button>
+    </div>
+    {{ form_end(form) }}
+</div>

@@ -1,0 +1,95 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+<div class="page-content">
+    <!-- BEGIN BREADCRUMBS -->
+    <div class="breadcrumbs">
+        <h1>Gestion des emplois de temps</h1>
+        <ol class="breadcrumb">
+            <li>
+                <a href="{{ path('faculte_admin_homepage') }}">Accueil</a>
+            </li>
+            <li class="active" >liste des emplois de temps</a>
+            </li>
+        </ol>
+    </div>
+    <!-- END BREADCRUMBS -->
+    <!-- BEGIN PAGE BASE CONTENT -->
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN PORTLET-->
+            <div class="portlet light form-fit bordered">
+                <div class="portlet-title">
+                    <div class="caption font-dark">
+                        <div class="caption">
+                            <i class="fa fa-calendar-o font-green"></i>
+                            <span class="caption-subject font-green bold uppercase">Liste des emplois de temps</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+
+                    </div>
+                </div>
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <a  class="btn green-sharp btn-outline  btn-block"  href="{{ path('faculte_admin_ajouter_emploitemps')}}"><i class="fa fa-plus-circle "> Emplois Temps</i></a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <table class="table table-striped table-bordered table-hover" id="sample_1">
+                            <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Filiére</th>
+                                <th>Niveau</th>
+                                <th>Groupe</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if emploistemps is not empty %}
+                            {% for emploitemps in emploistemps %}
+
+                            <tr>
+                                <td> <a href="{{ asset('files/emploitemps/'~emploitemps.id~'/'~emploitemps.pathFile) }}">{{emploitemps.nom }}</a></td>
+                                <td>{{emploitemps.groupe.niveau.filiere.nom }}</td>
+                                <td>{{emploitemps.groupe.niveau.numeroNiveau }}</td>
+                                <td>{{emploitemps.groupe.numGroupe }}</td>
+                                <td>
+                                    <a href="{{ path('faculte_admin_modifier_emploitemps',{'idET':emploitemps.id})}}" style="color:blue;"><span class="label label-mn label-primary"><i class="fa fa-edit font-white"></i></span></a>
+                                    <a href="#modal-delete{{emploitemps.id}}"
+                                       data-toggle="modal"
+                                       style="color:blue;"><span class="label label-mn btn red-thunderbird"><i class="fa fa-trash-o font-white"></i></span></a>
+                                </td>
+                            </tr>
+                                <div id="modal-delete{{ emploitemps.id}}" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                <h4 class="modal-title">Supprimer Emplois de temps </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p style="color:red" >Voulez-vous supprimer cette Emplois de temps "{{ emploitemps.nom }}"?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="{{path('faculte_admin_supprimer_emploitemps',{'idET':emploitemps.id})  }}" class="btn green"> Enregistrer</a>
+                                                <button class="btn default" data-dismiss="modal" aria-hidden="true">Annuler</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            {%endfor  %}
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

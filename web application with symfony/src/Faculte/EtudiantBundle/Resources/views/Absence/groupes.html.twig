@@ -1,0 +1,26 @@
+{% extends "FaculteEtudiantBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-8">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+               <div class="portlet-body">
+                {% if groupes is not empty %}
+                    {% for groupe in groupes %}
+                   <div class="note note-danger">
+                                <b>
+                                    <a href="{{ path('faculte_etudiant_index_absences',{'idGroupe':groupe.id}) }}"> {{ groupe.numGroupe }} </a>
+                                </b>
+                   </div>
+                    {% endfor %}
+                {% endif %}
+               </div>
+                <!-- END PAGE BASE CONTENT -->
+            </div>
+        </div>
+    </div>
+{% endblock %}

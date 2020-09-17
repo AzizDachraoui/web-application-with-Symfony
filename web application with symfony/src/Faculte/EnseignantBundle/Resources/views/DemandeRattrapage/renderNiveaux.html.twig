@@ -1,0 +1,48 @@
+    <select id="faculte_adminbundle_demanderattrapage_niveau" name="faculte_adminbundle_demanderattrapage[niveau]" required="required" class="form-control" placeholder="Niveau">
+        <option value="" selected="selected">Choisissez un niveau</option>
+        {%if niveaux is not empty%}
+            {%for niveau in niveaux%}
+                <option value="{{niveau.id}}" id="{{niveau.id}}">{{niveau.numeroNiveau}}</option>
+            {%endfor%}
+        {%endif%}
+    </select>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#faculte_adminbundle_demanderattrapage_niveau").change(function () {
+                var idNiveau = $(this).val();
+                var dataString = {idNiveau: idNiveau};
+                $.ajax
+                ({
+                    type: "POST",
+                    url: "{{ path('faculte_enseignant_render_groupe_demanderattrapage') }}",
+                    data: dataString,
+                    success: function (response) {
+                        $("#select_groupe").html(response);
+                    }
+                });
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#faculte_adminbundle_demanderattrapage_niveau").change(function () {
+                var idNiveau = $(this).val();
+                var dataString = {idNiveau: idNiveau};
+                $.ajax
+                ({
+                    type: "POST",
+                    url: "{{ path('faculte_enseignant_render_matiere_demanderattrapage') }}",
+                    data: dataString,
+                    success: function (response) {
+                        $("#select_matiere").html(response);
+                    }
+                });
+            });
+
+        });
+    </script>
+
+

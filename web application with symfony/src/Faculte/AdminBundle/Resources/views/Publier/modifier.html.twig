@@ -1,0 +1,95 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a>
+                </li>
+                <li>
+                    <a href="{{ path('faculte_admin_publiers') }}"> liste des actualités</a>
+                </li>
+                <li class="active">Modifier les informations  de l'actualité</li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+        <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-edit font-green  "></i>
+                            <span class="caption-subject font-green ">Formulaire de modification</span>
+                        </div>
+                    </div>
+                    <!-- BEGIN SAMPLE FORM PORTLET-->
+                    <div class="portlet-body form ">
+                        {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+                        <div class="form-body col-md-15">
+                            <div class="form-group">
+                                <div class="col-md-12 " style="color:red;">
+                                    {{ form_errors(form) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                {{ form_label(form.titre,null, {'label_attr': {'class': 'col-md-3 control-label'} }) }}</label>
+                                <div class="col-md-3">
+                                    {{ form_widget(form.titre,{'attr': {'class': 'form-control','placeholder':'Titre' }} ) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                {{ form_label(form.description,null, {'label_attr': {'class': 'col-md-3 control-label'} }) }}</label>
+                                <div class="col-md-3">
+                                    {{ form_widget(form.description,{'attr': {'class': 'form-control','placeholder':'Commentaire' }} ) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <a href="#modal-modif{{ publier.id }}" id="lien-modal{{ publier.id }}"
+                                       data-toggle="modal"
+                                       style="color:blue;"> Modifier Fichier</a>
+                                </div>
+                            </div>
+                            {{ form_rest(form) }}
+                        </div>
+                        <div class="form-actions ">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" class="btn green"><span class="label label-mn label-green"><i class="fa fa-pencil font-white"> Mettre à jour</i></span></button>
+                                <button type="button" class="btn default" onclick='location.href="{{ path('faculte_admin_publiers') }}"'>Annuler</button>
+                            </div>
+                        </div>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-modif{{ publier.id }}" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+        <div class="modal-dialog" id="modal-publier">
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lien-modal{{ publier.id }}").click(function () {
+                $.ajax
+                ({
+                    type: "POST",
+                    url: "{{ path('faculte_admin_modifier_publiers_file',{'idP': publier.id }) }}",
+                    // data: dataString,
+                    success: function (response) {
+                        $("#modal-publier").html(response);
+                    }
+                });
+            });
+        });
+    </script>
+{% endblock %}

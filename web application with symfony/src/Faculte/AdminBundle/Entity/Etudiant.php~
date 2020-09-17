@@ -1,0 +1,124 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Etudiant
+ *
+ * @ORM\Table(name="etudiant")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\EtudiantRepository")
+ */
+class Etudiant
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="CIN", type="integer")
+     */
+    private $CIN;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=255)
+     */
+    private $prenom;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="DateNaissance", type="date")
+     */
+    private $dateNaissance;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="LieuNaissance", type="string", length=255)
+     */
+    private $lieuNaissance;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sexe", type="string", length=255)
+     */
+    private $sexe;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nationalite", type="string", length=255)
+     */
+    private $nationalite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="telephone", type="string", length=255)
+     */
+    private $telephone;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=255)
+     */
+    private $adresse;
+
+  /*******************************/
+    /**
+     * @ORM\ManyToOne(targetEntity="Groupe", inversedBy="etudiant")
+     * @ORM\JoinColumn(name="groupe_id", referencedColumnName="id")
+     */
+    private $groupe;
+
+    /**
+     * @ORM\OneToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user;
+    /**
+     * @ORM\OneToMany(targetEntity="AbsenceEtd", mappedBy="etudiant",cascade={"remove"})
+     *
+     */
+    private $absenceEtds;
+
+
+    /****************************************************/
+
+    public function __toString()
+    {
+        return  (string)$this->getNom();
+
+    }
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->absenceEtds = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->publiers = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+}

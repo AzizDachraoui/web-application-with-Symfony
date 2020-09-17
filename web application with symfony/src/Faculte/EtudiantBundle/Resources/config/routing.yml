@@ -1,0 +1,55 @@
+faculte_etudiant_homepage:
+    path: /
+    defaults: { _controller: FaculteEtudiantBundle:Cour:index }
+faculte_etudiant_matiere:
+     path:     /matiere/{idNiveau}
+     defaults: { _controller: FaculteEtudiantBundle:Cour:matieres }
+faculte_etudiant_cours:
+     path: /cours/{idMatiere}
+     defaults: { _controller: FaculteEtudiantBundle:Cour:cours }
+
+
+faculte_etudiant_emploitemps:
+     path: /emploitemps
+     defaults: { _controller: FaculteEtudiantBundle:EmploiTemps:index}
+faculte_etudiant_groupes:
+      path:     /groupes/{idNiveau}
+      defaults: { _controller: FaculteEtudiantBundle:EmploiTemps:groupes}
+faculte_etudiant_consulte_emploitemps:
+      path:     /emploitemps_consulte
+      defaults: { _controller: FaculteEtudiantBundle:EmploiTemps:groupes}
+
+
+
+faculte_etudiant_resultats:
+      path:     /resultats
+      defaults: { _controller: FaculteEtudiantBundle:Resultat:index}
+faculte_etudiant_niveaux:
+      path:     /niveaux/{idN}
+      defaults: { _controller: FaculteEtudiantBundle:Resultat:niveaux}
+
+
+
+
+faculte_etudiant_absences:
+      path:     /absence
+      defaults: { _controller: FaculteEtudiantBundle:Absence:Filieres}
+faculte_etudiant_groupe_absences:
+      path:     /groupe_absences/{idNiveau}
+      defaults: { _controller: FaculteEtudiantBundle:Absence:groupe}
+faculte_etudiant_index_absences:
+      path:     /index_absences/{idGroupe}
+      defaults: { _controller: FaculteEtudiantBundle:Absence:index}
+faculte_etudiant_absence_absences:
+      path:     /index_absences/{idDemande}
+      defaults: { _controller: FaculteEtudiantBundle:Absence:absences}
+faculte_etudiant_email_enseignant:
+      path:     /emails_enseignants
+      defaults: { _controller: FaculteEtudiantBundle:EmailEnseignant:listeEmailEnseignants}
+
+
+
+
+
+
+

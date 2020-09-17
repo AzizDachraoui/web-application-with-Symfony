@@ -1,0 +1,289 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * DemandeRattrapage
+ *
+ * @ORM\Table(name="demande_rattrapage")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\DemandeRattrapageRepository")
+ */
+class DemandeRattrapage
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_rattrapage", type="date")
+     */
+    private $dateRattrapage;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_creation", type="datetime")
+     */
+    private $dateCreation;
+
+
+    /**
+     * @var \string
+     *
+     * @ORM\Column(name="heure", type="string", length=255)
+     */
+    private $heure;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="accepter", type="boolean", nullable=true)
+     */
+    private $accepter;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="consulter", type="boolean", nullable=true)
+     */
+    private $consulter;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="commentaire", type="text",nullable=true)
+     */
+    private $commentaire;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Enseignant", inversedBy="demanderattrapage")
+     * @ORM\JoinColumn(name="enseignant_id", referencedColumnName="id")
+     */
+    private $enseignant;
+    /**
+     * @ORM\ManyToOne(targetEntity="Matiere", inversedBy="demanderattrapage")
+     * @ORM\JoinColumn(name="matiere_id", referencedColumnName="id")
+     */
+    private $matiere;
+
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->dateCreation = new \DateTime('now');
+    }
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set dateRattrapage
+     *
+     * @param \DateTime $dateRattrapage
+     *
+     * @return DemandeRattrapage
+     */
+    public function setDateRattrapage($dateRattrapage)
+    {
+        $this->dateRattrapage = $dateRattrapage;
+
+        return $this;
+    }
+
+    /**
+     * Get dateRattrapage
+     *
+     * @return \DateTime
+     */
+    public function getDateRattrapage()
+    {
+        return $this->dateRattrapage;
+    }
+
+    /**
+     * Set dateCreation
+     *
+     * @param \DateTime $dateCreation
+     *
+     * @return DemandeRattrapage
+     */
+    public function setDateCreation($dateCreation)
+    {
+        $this->dateCreation = $dateCreation;
+
+        return $this;
+    }
+
+    /**
+     * Get dateCreation
+     *
+     * @return \DateTime
+     */
+    public function getDateCreation()
+    {
+        return $this->dateCreation;
+    }
+
+    /**
+     * Set heure
+     *
+     * @param string $heure
+     *
+     * @return DemandeRattrapage
+     */
+    public function setHeure($heure)
+    {
+        $this->heure = $heure;
+
+        return $this;
+    }
+
+    /**
+     * Get heure
+     *
+     * @return string
+     */
+    public function getHeure()
+    {
+        return $this->heure;
+    }
+
+    /**
+     * Set accepter
+     *
+     * @param boolean $accepter
+     *
+     * @return DemandeRattrapage
+     */
+    public function setAccepter($accepter)
+    {
+        $this->accepter = $accepter;
+
+        return $this;
+    }
+
+    /**
+     * Get accepter
+     *
+     * @return boolean
+     */
+    public function getAccepter()
+    {
+        return $this->accepter;
+    }
+
+    /**
+     * Set consulter
+     *
+     * @param boolean $consulter
+     *
+     * @return DemandeRattrapage
+     */
+    public function setConsulter($consulter)
+    {
+        $this->consulter = $consulter;
+
+        return $this;
+    }
+
+    /**
+     * Get consulter
+     *
+     * @return boolean
+     */
+    public function getConsulter()
+    {
+        return $this->consulter;
+    }
+
+    /**
+     * Set commentaire
+     *
+     * @param string $commentaire
+     *
+     * @return DemandeRattrapage
+     */
+    public function setCommentaire($commentaire)
+    {
+        $this->commentaire = $commentaire;
+
+        return $this;
+    }
+
+    /**
+     * Get commentaire
+     *
+     * @return string
+     */
+    public function getCommentaire()
+    {
+        return $this->commentaire;
+    }
+
+    /**
+     * Set enseignant
+     *
+     * @param \Faculte\AdminBundle\Entity\Enseignant $enseignant
+     *
+     * @return DemandeRattrapage
+     */
+    public function setEnseignant(\Faculte\AdminBundle\Entity\Enseignant $enseignant = null)
+    {
+        $this->enseignant = $enseignant;
+
+        return $this;
+    }
+
+    /**
+     * Get enseignant
+     *
+     * @return \Faculte\AdminBundle\Entity\Enseignant
+     */
+    public function getEnseignant()
+    {
+        return $this->enseignant;
+    }
+
+    /**
+     * Set matiere
+     *
+     * @param \Faculte\AdminBundle\Entity\Matiere $matiere
+     *
+     * @return DemandeRattrapage
+     */
+    public function setMatiere(\Faculte\AdminBundle\Entity\Matiere $matiere = null)
+    {
+        $this->matiere = $matiere;
+
+        return $this;
+    }
+
+    /**
+     * Get matiere
+     *
+     * @return \Faculte\AdminBundle\Entity\Matiere
+     */
+    public function getMatiere()
+    {
+        return $this->matiere;
+    }
+}

@@ -1,0 +1,14 @@
+<select id="matiere_niveaux" name="matiere[niveaux][]" required="required" class="form-control" multiple="multiple">
+    {%if niveaux is not empty%}
+        {%for niveau in niveaux%}
+            <option value="{{niveau.id}}"
+                    {% if matiere is defined %}
+                        {% if matiere is not empty %}
+                    {% for niveauMatiere in matiere.niveaux %}
+                    {% if niveauMatiere.id == niveau.id %} selected="selected" {% endif %} {% endfor %}
+                    {% endif %}
+                    {% endif %}
+                    id="{{niveau.id}}">{{niveau.numeroNiveau}}</option>
+        {%endfor%}
+    {%endif%}
+</select>

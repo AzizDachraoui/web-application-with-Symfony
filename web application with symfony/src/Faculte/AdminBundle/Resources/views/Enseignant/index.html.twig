@@ -1,0 +1,116 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <h1>Gestion des enseignants</h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a>
+                </li>
+                <li class="active" >Liste des enseignants
+                </li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <div class="caption">
+                                <i class="fa fa-user font-green "></i>
+                                <span class="caption-subject font-green bold uppercase">Liste des Enseignants</span>
+                            </div>
+                        </div>
+                        <div class="actions">
+
+                        </div>
+                    </div>
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                    <div class="portlet light ">
+                        <div class="portlet-title">
+                            <div class="caption font-dark">
+                                <a  class="btn green-sharp btn-outline  btn-block "  href="{{ path('faculte_admin_ajouter')}}"><i class="fa fa-plus-circle "> Enseignant</i></a>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <table class="table table-striped table-bordered table-hover" id="sample_1">
+                                <thead>
+                                <th>Nom</th>
+                                <th>Prenom</th>
+                                <th>Specialite</th>
+                                <th>Telephone</th>
+                                <th>Adresse</th>
+                                <th>Ville</th>
+                                <th>Civilite</th>
+                                <th>DateNaissance</th>
+                                <th>Email</th>
+                                <th>Etat</th>
+                                <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% if Enseignants is not empty %}
+                                    {% for Enseignant in Enseignants %}
+                                        <tr>
+                                            <td>{{Enseignant.nom }}</td>
+                                            <td>{{Enseignant.prenom }}</td>
+                                            <td>{{Enseignant.specialite }}</td>
+                                            <td>{{Enseignant.telephone }}</td>
+                                            <td>{{Enseignant.adresse }}</td>
+                                            <td>{{Enseignant.ville}}</td>
+                                            <td>{{Enseignant.civilite}}</td>
+                                            <td>{{Enseignant.DateNaissance|date('d-m-Y')}}</td>
+                                            <td>{{Enseignant.user.email}}</td>
+                                            <td> {% if (Enseignant.user.enabled == 1) %}
+                                                    activé
+
+                                                {% else %}
+                                                    désactivé
+                                                {% endif %} </td>
+                                            <td>
+                                            <td> <span class="label label-mn label-primary">
+                                                <a href="{{ path('faculte_admin_modifier',{'id':Enseignant.id}) }}" title="modifier" style="color:blue;"><i class="fa fa-edit font-white"></i></a></span>
+                                                <span class="label label-mn btn red-thunderbird">
+                                                <a href="/faculte/pfeProjet/web/app_dev.php/admin/desactiver/{{ Enseignant.user.id }}" title="desactiver" style="color:blue;"><i class="fa fa-times font-white"></i></a></span>
+                                                <span class="label label-mn label-success">
+                                                <a href=" /faculte/pfeProjet/web/app_dev.php/admin/activer/{{ Enseignant.user.id }}" title="activer" style="color:blue;"><i class="fa fa-thumbs-up font-white"></i></a></span>
+
+                                            </td>
+                                        </tr>
+                                        <div id="modal-delete{{ Enseignant.id }}" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                        <h4 class="modal-title">Supprimer Enseignant </h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p style="color:red" >Voulez-vous supprimer cette Enseignant "{{ Enseignant.nom }}"?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a href="{{ path('faculte_admin_supprimer',{'id':Enseignant.id}) }}" class="btn green"> Supprimer</a>
+                                                        <button class="btn default" data-dismiss="modal" aria-hidden="true">Annuler</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {%endfor  %}
+                                {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END EXAMPLE TABLE PORTLET-->
+
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+{% endblock %}

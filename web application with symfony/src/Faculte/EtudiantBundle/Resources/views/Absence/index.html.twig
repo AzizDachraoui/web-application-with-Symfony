@@ -1,0 +1,63 @@
+{% extends "FaculteEtudiantBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+                <!-- BEGIN PORTLET-->
+                <div class="col-md-8">
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <div class="caption">
+                                <i class="icon-social-dribbble font-green"></i>
+                                <span class="caption-subject font-green bold uppercase">{{ etudiant.nom }} {{ etudiant.prenom }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+                    <div class="portlet-body">
+                        <table class="table table-striped table-bordered table-hover" id="sample_1">
+                            <thead>
+                            <tr>
+                                <th>Matiere</th>
+                                <th>Nombre d'absence</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if matieres is not empty %}
+                                {% for matiere in matieres %}
+                            <tr >
+
+                                <td class="primary-link font-red-pink">{{matiere.nom}}</td>
+
+
+                                <td class="primary-link font-green-seagreen">
+                                    {% if absences is not empty %}
+                                        {% for absence in absences %}
+                                            {% if absence.matiere.id == matiere.id %}
+                                                {{ absence.nbAbsence }}
+                                                {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END EXAMPLE TABLE PORTLET-->
+
+                </div>
+                <!-- END PORTLET-->
+                </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+
+
+{% endblock %}

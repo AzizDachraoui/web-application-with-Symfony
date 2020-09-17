@@ -1,0 +1,110 @@
+{% extends "FaculteEnseignantBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="col-md-9 col-sm-9">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title">
+                    <a href="#accordion1_1" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+                        liste des demandes de rattrapage
+                    </a>
+                </h5>
+            </div>
+            <div class="panel-collapse collapse in" id="accordion1_1">
+                <div class="panel-body">
+                    <div class="portlet light ">
+                        <div class="portlet-title">
+                            <div class="col-md-2 col-sm-3">
+                                <div class="caption font-dark">
+                                    <a  class="btn green-sharp btn-outline  btn-block "  href="{{ path('faculte_enseignant_ajouter_demanderattrapage')}}"><i class="fa fa-plus-circle "> Demande</i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tools">
+                        </div>
+
+                        <div class="portlet-body">
+                            <table class="table table-striped table-bordered table-hover" id="sample_1">
+                                <thead>
+                                <tr>
+                                    <th>Date de rattrapage</th>
+                                    <th>Heure</th>
+                                    <th>Filiere</th>
+                                    <th>Niveau</th>
+                                    <th>Groupe</th>
+                                    <th>Matiere</th>
+                                    <th>Acceptée</th>
+                                    <th>Commentaire</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% if demandes is not empty %}
+                                    {% for demande in demandes %}
+                                        <tr>
+
+                                            <td>{{ demande.dateRattrapage|date('d-m-Y') }}</td>
+                                            <td>{{ demande.heure }}</td>
+                                            <td>
+                                                {% for niveau in demande.matiere.niveaux %}
+                                                    {{ niveau.filiere.nom }}
+                                                {% endfor %}
+
+                                            </td>
+                                            <td>
+                                                {% for niveau in demande.matiere.niveaux %}
+                                                    {{ niveau.numeroNiveau }}
+                                                {% endfor %}
+                                            </td>
+                                            <td>
+                                                {% for niveau in demande.matiere.niveaux %}
+                                                    {% for groupe in niveau.groupes %}
+                                                        {{ groupe.numGroupe }}
+                                                    {% endfor %}
+                                                {% endfor %}
+                                            </td>
+                                            <td>{{ demande.matiere.nom }}</td>
+                                            <td>
+                                                {% if demande.accepter == "0" %} Demande annulée
+                                                    <span class="label label-sm label-danger"> <i class="fa fa-minus-circle"></i></span>
+                                                {% elseif demande.accepter == "1" %} Demande acceptée
+                                                    <span class="label label-sm bg-green-jungle bg-font-green-jungle"> <i class="fa fa-check"></i></span>
+                                                {% elseif demande.accepter == NULL %}Demande en attente de validation
+                                                    <span class="label label-sm label-warning"> <i class="fa fa-warning"></i> </span>
+                                                {% endif %}
+                                            </td>
+                                            <td>{{ demande.commentaire }}</td>
+                                            <td> <a href="#modal-delete{{ demande.id}}"
+                                                    data-toggle="modal"
+                                                    style="color:blue;"><span class="label label-mn btn red-thunderbird"><i class="fa fa-trash-o font-white"></i></span></a>
+                                            </td>
+                                            <div id="modal-delete{{  demande.id }}" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                            <h4 class="modal-title">Supprimer demande </h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p style="color:red" >Voulez-vous supprimer cette demande "{{ demande.dateRattrapage|date('d-m-Y') }}"?</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <a href="{{path('faculte_enseignant_supprimer_demanderattrapage',{'idD':demande.id})  }}" class="btn green"> Enregistrer</a>
+                                                            <button class="btn default" data-dismiss="modal" aria-hidden="true">Annuler</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </tr>
+                                    {% endfor %}
+                                {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

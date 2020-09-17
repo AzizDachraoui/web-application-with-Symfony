@@ -1,0 +1,33 @@
+II.1 Présentation du modèle
+Le modèle de cycle de vie en spirale est un modèle conceptuel et considéré comme une méthode d’organisation très 
+connue et plus utilisée dans la gestion des projets informatiques. C’est la solution imaginée suite au problème
+ de réactivité de modèle en V [4]. 
+ Le modèle de cycle de vie en spirale permet mieux gérer les risques à chaque itération. 
+On n’a pas la possibilité de retour aux étapes précédentes (voir Figure 18) :
+
+
+
+
+
+
+
+
+
+
+
+Modèle de cycle de vie : Le modèle en spirale
+
+
+    Figure 18 : Modèle de cycle de vie en spirale
+II.2 Description du modèle
+Le modèle en V est parcouru de gauche à droite en suivant la forme de la lettre V. Les activités de constructions précédent les activités de vérification et de validation, alors que l’acceptation est préparée dès la construction. Cela permet de mieux approfondir la construction et de mieux planifier la remonter. 
+Le schéma de modèle en V montre donc que :
+?	Les procédures de validation se sont préoccupées lors de la phase de spécification des besoins.
+?	Les procédures de tests d’intégrations se sont préoccupées lors de la phase de la conception générale.
+?	La préparation aux tests unitaires est réalisée lors de la phase de conception générale.
+Le modèle de cycle de vie en spirale permet d’anticiper sur les phases ultérieures de développement du produit, plus particulièrement suivant une démarche planifiée comme suit :
+?	Détermination des objectifs.
+?	Analyse et résoudre les risques
+?	Développement et vérification de la solution pour planifier la phase suivante.
+?	Revue des résultats et vérification du cycle pour valider le développement.
+?	Plan d’évaluation de performances [4].

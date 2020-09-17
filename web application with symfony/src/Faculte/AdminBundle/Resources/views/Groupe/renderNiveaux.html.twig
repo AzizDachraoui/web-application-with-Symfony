@@ -1,0 +1,15 @@
+<select id="faculte_adminbundle_groupe_niveau" required="required" name="faculte_adminbundle_groupe[niveau]"
+        class="form-control" placeholder="Niveau">
+    <option value="" >Choisissez un niveau</option>
+    {% if niveaux is not empty %}
+        {% for niveau in niveaux %}
+            <option value="{{ niveau.id }}" id="{{ niveau.id }}"
+                    {% if Groupe is defined %}
+                        {% if Groupe is not empty %}
+                            {% for niveauGroupe in Groupe.niveaux %} {% if niveauGroupe.id == niveau.id %} selected="selected" {% endif %}{% endfor %}
+                        {% endif %}
+                    {% endif %}
+            >{{ niveau.numeroNiveau }}</option>
+        {% endfor %}
+    {% endif %}
+</select>

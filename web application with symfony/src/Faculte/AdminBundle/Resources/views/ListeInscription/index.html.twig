@@ -1,0 +1,78 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+<div class="page-content">
+    <!-- BEGIN BREADCRUMBS -->
+    <div class="breadcrumbs">
+        <h1>Liste des inscriptions en ligne</h1>
+        <ol class="breadcrumb">
+            <li>
+                <a href="{{ path('faculte_admin_homepage') }}">Accueil</a>
+            </li>
+            <li class="active" >Liste des inscriptions en ligne
+            </li>
+        </ol>
+    </div>
+    <!-- END BREADCRUMBS -->
+    <!-- BEGIN PAGE BASE CONTENT -->
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN PORTLET-->
+            <div class="portlet light form-fit bordered">
+                <div class="portlet-title">
+                    <div class="caption font-dark">
+                        <div class="caption">
+                            <i class="icon-social-dribbble font-green"></i>
+                            <span class="caption-subject font-green bold uppercase">Liste des inscriptions en ligne</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+
+                    </div>
+                </div>
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light ">
+                    <div class="portlet-body">
+                        <table class="table table-striped table-bordered table-hover" id="sample_1">
+                            <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Prénom</th>
+                                <th>CIN</th>
+                                <th>Date de naissance</th>
+                                <th>Sexe</th>
+                                <th>Email</th>
+                                <th>Numéro de téléphone</th>
+                                <th>Profession</th>
+                                <th>Niveau d'étude</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if inscription is not empty %}
+                            {% for ListeInscriptions in inscription %}
+
+                            <tr>
+                                <td>{{ListeInscriptions.nom}}</td>
+                                <td>{{ListeInscriptions.prenom}}</td>
+                                <td>{{ListeInscriptions.cin}}</td>
+                                <td>{{ListeInscriptions.DatedeNaissance|date('d-m-Y')}}</td>
+                                <td>{{ListeInscriptions.sexe}}</td>
+                                <td>{{ListeInscriptions.user.email}}</td>
+                                <td>{{ListeInscriptions.Numerodetelephone}}</td>
+                                <td>{{ListeInscriptions.profession}}</td>
+                                <td>{{ListeInscriptions.Niveaudetude}}</td>
+
+
+                                {%endfor  %}
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

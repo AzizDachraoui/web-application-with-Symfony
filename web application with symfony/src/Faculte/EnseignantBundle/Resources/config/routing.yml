@@ -1,0 +1,57 @@
+faculte_enseignant_homepage:
+    path: /
+    defaults: { _controller: FaculteEnseignantBundle:Default:index }
+faculte_enseignant_cours:
+    path: /cours
+    defaults: { _controller: FaculteEnseignantBundle:Cour:index }
+faculte_enseignant_ajouter_cour:
+    path:     /ajouter_cour
+    defaults: { _controller: FaculteEnseignantBundle:Cour:ajouterCour}
+
+faculte_enseignant_modifier_cour:
+    path:     /modifier_cour/{idC}
+    defaults: { _controller: FaculteEnseignantBundle:Cour:modifierCour}
+
+faculte_enseignant_modifier_cour_file:
+    path:     /modifier_cour_file/{idC}
+    defaults: { _controller: FaculteEnseignantBundle:Cour:modifierFileCour}
+
+faculte_enseignant_supprimer_cour:
+    path:    /supprimer_cours/{idC}
+    defaults: {_controller: FaculteEnseignantBundle:Cour:supprimerCour}
+
+faculte_enseignant_render_niveaux:
+    path:     /render_niveaux
+    defaults: { _controller: FaculteEnseignantBundle:Cour:renderNiveau}
+
+faculte_enseignant_render_matiere_cour:
+    path:     /render_matiere
+    defaults: { _controller: FaculteEnseignantBundle:Cour:renderMatieres}
+
+
+
+
+
+
+
+
+faculte_enseignant_demanderattrapages:
+    path: /demanderattrapages
+    defaults: { _controller: FaculteEnseignantBundle:DemandeRattrapage:index }
+faculte_enseignant_ajouter_demanderattrapage:
+    path:     /ajouter_demanderattrapage
+    defaults: { _controller: FaculteEnseignantBundle:DemandeRattrapage:ajouterDemandeRattrapage}
+faculte_enseignant_supprimer_demanderattrapage:
+    path:    /supprimer_demanderattrapage/{idD}
+    defaults: {_controller: FaculteEnseignantBundle:DemandeRattrapage:supprimerDemandeRattrapage}
+faculte_enseignant_render_niveau_demanderattrapage:
+    path:     /render_niveaux/enseignant
+    defaults: { _controller: FaculteEnseignantBundle:DemandeRattrapage:renderNiveaux}
+faculte_enseignant_render_groupe_demanderattrapage:
+    path:     /render_groups/enseignant
+    defaults: { _controller: FaculteEnseignantBundle:DemandeRattrapage:renderGroupes}
+faculte_enseignant_render_matiere_demanderattrapage:
+    path:     /render_matiere/enseignant
+    defaults: { _controller: FaculteEnseignantBundle:DemandeRattrapage:renderMatieres}
+
+

@@ -1,0 +1,36 @@
+{% extends "FaculteEtudiantBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="col-md-9 col-sm-9">
+        <div class="panel panel-default">
+
+                <div class="panel-body">
+                    <div class="portlet light ">
+                        <div class="portlet-body">
+                            <table class="table table-striped table-bordered table-hover"  id="sample_1">
+                                <thead>
+                                <tr>
+                                    <th>Email</th>
+                                    <th>Enseignant</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% if enseignants is not empty %}
+                                    {% for enseignant in enseignants %}
+                                            <tr>
+                                                <td>
+                                                    {{ enseignant.user.email }}
+                                                 </td>
+                                                <td >  {{ enseignant.nom }}  {{ enseignant.prenom }}</td>
+                                            </tr>
+                                    {% endfor %}
+                                {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+faculte_front:
+    resource: "@FaculteFrontBundle/Resources/config/routing.yml"
+    prefix:   /
+
+faculte_admin:
+    resource: "@FaculteAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+faculte_enseignant:
+    resource: "@FaculteEnseignantBundle/Resources/config/routing.yml"
+    prefix:   /enseignant
+faculte_etudiant:
+    resource: "@FaculteEtudiantBundle/Resources/config/routing.yml"
+    prefix:   /etudiant
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+

@@ -1,0 +1,40 @@
+{% extends "FaculteEtudiantBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="col-md-9 col-sm-9">
+        <div class="portlet">
+            <div class="portlet-title">
+                <div class="caption">
+                    Catégories de cours
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                        {% if Filieres is not empty %}
+                            {% for Filiere in Filieres %}
+                                {% for niveau in Filiere.niveaux %}
+                                    <option value="{{ Filiere.id }}">Licence / {{ Filiere.nom }}
+                                        / {{ niveau.numeroNiveau }} </option>
+                                {% endfor %}
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+            </div>
+            <div class="portlet-body">
+                {% if matiere is not empty %}
+                    {% for matiere in matiere %}
+                        {% for enseignants  in matiere.enseignants %}
+                            <div class="well">
+                                <b>
+                                    <a href="{{ path('faculte_etudiant_cours',{'idMatiere':matiere.id}) }}">{{ matiere.nom }}</a><br>
+                                    Enseignant: {{ enseignants.nom }}
+                                </b>
+
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

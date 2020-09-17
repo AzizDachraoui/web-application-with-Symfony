@@ -1,0 +1,46 @@
+<select id="faculte_adminbundle_emploitemps_niveau" name="faculte_adminbundle_emploitemps[niveau]" required="required" class="form-control" placeholder="Niveau">
+    <option  value="" >Choisissez un niveau</option>
+    {%if niveaux is not empty%}
+        {%for niveau in niveaux%}
+            <option value="{{niveau.id}}" id="{{niveau.id}}">{{niveau.numeroNiveau}}</option>
+        {%endfor%}
+    {%endif%}
+</select>
+<script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#faculte_adminbundle_emploitemps_niveau").change(function () {
+                var idNiveau = $(this).val();
+                var dataString = {idNiveau: idNiveau};
+                $.ajax
+                ({
+                    type: "POST",
+                    url: "{{ path('faculte_admin_render_groupe_emploitemps') }}",
+                    data: dataString,
+                    success: function (response) {
+                        $("#select_groupe").html(response);
+                    }
+                });
+            });
+
+            {% if emploitemps is not empty %}
+            var idNiveau = {{emploitemps.groupe.niveau.id }} ;
+            var idEmploiTemps = {{emploitemps.id }} ;
+
+            $("#faculte_adminbundle_emploitemps_niveau > option[value *= '"+idNiveau+"']").attr("selected",true);
+
+            var idNiveau = $("#faculte_adminbundle_emploitemps_niveau").val();
+            var dataString = {idNiveau: idNiveau,idEmploiTemps:idEmploiTemps};
+            $.ajax
+            ({
+                type: "POST",
+                url: "{{path('faculte_admin_render_groupe_emploitemps')}}",
+                data: dataString,
+                success: function(response)
+                {
+                    $("#select_groupe").html(response);
+                }
+            });
+            {% endif %}
+        });
+    </script>

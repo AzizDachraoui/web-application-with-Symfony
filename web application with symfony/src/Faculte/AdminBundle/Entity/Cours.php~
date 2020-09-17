@@ -1,0 +1,106 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Cours
+ *
+ * @ORM\Table(name="cours")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\CoursRepository")
+ */
+class Cours
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+    /**
+     * @ORM\ManyToOne(targetEntity="Enseignant", inversedBy="cours")
+     * @ORM\JoinColumn(name="enseignat_id", referencedColumnName="id")
+     */
+    private $enseignant;
+    /**
+     * @ORM\ManyToMany(targetEntity="Groupe", inversedBy="cours")
+     * @ORM\Jointable(name="Cours-Groupe")
+     */
+    private $groupe;
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->groupe = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return Cours
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set enseignant
+     *
+     * @param \Faculte\AdminBundle\Entity\Enseignant $enseignant
+     *
+     * @return Cours
+     */
+    public function setEnseignant(\Faculte\AdminBundle\Entity\Enseignant $enseignant = null)
+    {
+        $this->enseignant = $enseignant;
+
+        return $this;
+    }
+
+    /**
+     * Get enseignant
+     *
+     * @return \Faculte\AdminBundle\Entity\Enseignant
+     */
+    public function getEnseignant()
+    {
+        return $this->getenseignant();
+    }
+}

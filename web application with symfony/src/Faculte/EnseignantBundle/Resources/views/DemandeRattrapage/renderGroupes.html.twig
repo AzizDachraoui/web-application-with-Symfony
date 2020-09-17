@@ -1,0 +1,28 @@
+<select id="faculte_adminbundle_demanderattrapage_groupe" name="faculte_adminbundle_demanderattrapage[groupe]"required="required" class="form-control" placeholder="Numero de Groupe">
+        <option value="" selected="selected">Choisissez un groupe</option>
+        {%if groupes is not empty%}
+            {%for groupe in groupes%}
+                <option value="{{groupe.id}}" id="{{groupe.id}}">{{groupe.numGroupe}}</option>
+            {%endfor%}
+        {%endif%}
+ </select>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        {% if demandeRattrapage is not empty %}
+        {% for niveau in demandeRattrapage.matiere.niveaux %}
+        {% for groupe in niveau.groupes %}
+
+        var idGroupe = {{groupe.id }} ;
+
+        $("#faculte_adminbundle_demanderattrapage_groupe > option[value *= '"+idGroupe+"']").attr("selected",true);
+
+        {% endfor %}
+        {% endfor %}
+        {% endif %}
+    });
+</script>
+
+

@@ -1,0 +1,50 @@
+{% extends "FaculteEtudiantBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="col-md-9 col-sm-9">
+        <div class="portlet">
+            <div class="portlet-title">
+                <div class="caption">
+                    Catégories de résultats des examens
+                </div>
+                <div class="form-group">
+                <select  class="form-control" onChange="window.location.href=this.value">
+                {% if Filieres is not empty %}
+                {% for Filiere in Filieres %}
+               {% for niveau in Filiere.niveaux %}
+                <option value="{{niveau.id}}"
+                        {% if app.request.attributes.get('idN') == niveau.id %} selected{% endif %}>Licence / {{Filiere.nom}} / {{ niveau.numeroNiveau }} </option>
+                {%endfor%}
+                {%endfor%}
+                {%endif%}
+                </select>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <table class="table table-striped table-bordered table-hover" id="sample_1">
+                    <thead>
+                    <tr>
+                        <th class="hide"></th>
+                        <th class="hide"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% if resultats is not empty %}
+                        {% for resultat in resultats %}
+                                <tr>
+                                    <td>
+                                        <b>
+                                            {{ resultat.nom }}<br>
+                                            <a href="{{ asset('files/resultats/'~resultat.id~'/'~resultat.pathFile) }}">Télécharger</a>
+                                        </b>
+                                    </td>
+                                    <td class="hide"></td>
+                                </tr>
+                        {% endfor %}
+                    {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

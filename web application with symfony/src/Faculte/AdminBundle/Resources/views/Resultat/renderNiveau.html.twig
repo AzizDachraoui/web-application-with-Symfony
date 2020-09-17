@@ -1,0 +1,15 @@
+<select id="faculte_adminbundle_resultat_niveau" name="faculte_adminbundle_resultat[niveau]" required="required" class="form-control" placeholder="Niveau">
+    <option value="" >Choisissez un niveau</option>
+    {%if niveaux is not empty%}
+        {%for niveau in niveaux%}
+            <option value="{{niveau.id}}" id="{{niveau.id}}"
+                    {% if resultat is defined %}
+                        {% if resultat is not empty %}
+                            {% if resultat.niveau.id == niveau.id %} selected="selected" {% endif %}
+                        {%  endif%}
+                    {%  endif%}
+
+            >{{niveau.numeroNiveau}}</option>
+        {%endfor%}
+    {%endif%}
+</select>

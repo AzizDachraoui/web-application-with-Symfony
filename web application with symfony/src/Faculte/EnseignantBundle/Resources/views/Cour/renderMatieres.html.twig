@@ -1,0 +1,23 @@
+<select id="faculte_adminbundle_cour_matiere" name="faculte_adminbundle_cour[matiere]" required="required" class="form-control">
+    <option value="" selected="selected">Choisissez une matiere</option>
+    {%if matieres is not empty%}
+        {%for matiere in matieres %}
+            {% if loop.index == 1 %}
+            <option value="{{matiere.id}}" id="{{matiere.id}}">{{matiere.nom}}</option>
+                {% endif %}
+        {%endfor%}
+    {%endif%}
+ </select>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        {% if cours is not empty %}
+        var idMatiere = {{cours.matiere.id }} ;
+
+        $("#faculte_adminbundle_cour_matiere > option[value *= '"+idMatiere+"']").attr("selected",true);
+        {% endif %}
+    });
+</script>

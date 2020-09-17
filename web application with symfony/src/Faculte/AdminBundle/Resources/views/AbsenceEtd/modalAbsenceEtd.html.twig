@@ -1,0 +1,70 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title">{{ etudiant.nom }} {{ etudiant.prenom }}</h4>
+    </div>
+    <div class="modal-body">
+        {{ form_start(form, {'action': path('faculte_admin_render_modal_absence_etd'), 'method': 'POST','attr': {'class': 'form-horizontal'} }) }}
+
+        <div class="form-body col-md-15">
+            <div class="form-group">
+                <div class="col-md-12 " style="color:red;">
+                    {{ form_errors(form) }}
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.nbAbsence,null, {'label_attr': {'class': 'col-md-3 control-label'} }) }}</label>
+            <div class="col-md-3">
+                {{ form_widget(form.nbAbsence,{"attr": {"class": "form-control","placeholder":"Nombre d'absence" }} ) }}
+            </div>
+        </div>
+        <div class="form-group" style="display: none">
+            {{ form_widget(form.etudiant) }}
+            {{ form_widget(form.matiere) }}
+        </div>
+
+    {{ form_end(form) }}
+    </div>
+
+    <div class="modal-footer">
+        <a class="btn green" id="submitAbsenceEtd"  >Enregistrer</a>
+        <button class="btn default" data-dismiss="modal" aria-hidden="true">Fermer</button>
+    </div>
+
+</div>
+
+<script>
+    jQuery(document).ready(function() {
+        $("[id=submitAbsenceEtd]").click(function()
+        {
+            var idEtd =$("#faculte_adminbundle_absenceetd_etudiant").val();
+            var idMatiere =$("#faculte_adminbundle_absenceetd_matiere").val();
+            var nbrAbsence =$("#faculte_adminbundle_absenceetd_nbAbsence").val();
+
+            var dataString = { idEtd:idEtd,idMatiere:idMatiere,nbrAbsence:nbrAbsence };
+            $.ajax
+            ({
+                type: "POST",
+                url: "{{path('faculte_admin_render_modal_absence_etd')}}",
+                data: dataString,
+                success: function(response)
+                {
+                    var idGroupe = {{ etudiant.groupe.id }}
+                    var dataString = {idMatiere: idMatiere,idGroupe:idGroupe};
+                    $.ajax
+                    ({
+                        type: "POST",
+                        url: "{{ path('faculte_admin_search_absence_etudiant') }}",
+                        data: dataString,
+                        success: function (response) {
+                            $("#table_etudiant").html(response);
+                        }
+                    });
+                    $('#edit-absence').modal('hide');
+
+                }
+            });
+        });
+    });
+</script>

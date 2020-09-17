@@ -1,0 +1,133 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+    <!-- BEGIN BREADCRUMBS -->
+    <div class="breadcrumbs">
+        <h1>Gestion des étudiants</h1>
+        <ol class="breadcrumb">
+            <li>
+                <a href="{{ path('faculte_admin_homepage') }}">Accueil</a>
+            </li>
+            <li class="active">liste des étudiants
+            </li>
+        </ol>
+    </div>
+    <!-- END BREADCRUMBS -->
+    <!-- BEGIN PAGE BASE CONTENT -->
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN PORTLET-->
+            <div class="portlet light form-fit bordered">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="fa fa-user font-green "></i>
+                        <span class="caption-subject font-green bold uppercase">Liste des Etudiant</span>
+                    </div>
+                    <div class="actions">
+
+                    </div>
+                </div>
+                <!-- BEGIN SAMPLE FORM PORTLET-->
+                <div class="portlet light ">
+                    <div class="portlet-title ">
+                        <div class="caption font-dark ">
+                            <a class="btn green-sharp btn-outline  btn-block "
+                               href="{{ path('faculte_admin_ajouter_etudiant') }}"><i class="fa fa-plus-circle ">
+                                    Etudiant</i></a>
+
+                        </div>
+                        <div class="tools">
+                        </div>
+                    </div>
+
+                    <div class="portlet-body">
+                        <table class="table table-striped table-bordered table-hover" id="sample_1">
+                            <thead>
+                            <tr>
+                                <th>CIN</th>
+                                <th>Nom</th>
+                                <th>Prenom</th>
+                                <th>lieuNaissance</th>
+                                <th>Telephone</th>
+                                <th>Adresse</th>
+                                <th>Sexe</th>
+                                <th>Nationalite</th>
+                                <th>DateNaissance</th>
+                                <th>Niveau</th>
+                                <th>Nom de Filiére</th>
+                                <th>Numero de Groupe</th>
+                                <th>Etat</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if Etudiants is not empty %}
+                                {% for Etudiant in Etudiants %}
+                                    <tr>
+                                        <td>{{ Etudiant.CIN }}</td>
+                                        <td>{{ Etudiant.nom }}</td>
+                                        <td>{{ Etudiant.prenom }}</td>
+                                        <td>{{ Etudiant.lieuNaissance }}</td>
+                                        <td>{{ Etudiant.telephone }}</td>
+                                        <td>{{ Etudiant.adresse }}</td>
+                                        <td>{{ Etudiant.sexe }}</td>
+                                        <td>{{ Etudiant.nationalite }}</td>
+                                        <td>{{ Etudiant.DateNaissance|date('d-m-Y') }}</td>
+                                        <td>{{ Etudiant.Groupe.niveau.numeroNiveau }}</td>
+                                        <td>{{ Etudiant.Groupe.niveau.filiere.nom }}</td>
+                                        <td>{{ Etudiant.Groupe.numGroupe }}</td>
+                                        <td> {% if (Etudiant.user.enabled == 1) %}
+                                            activé
+
+                                            {% else %}
+                                            désactivé
+                                            {% endif %} </td>
+                                        <td>
+                                             <span class="label label-mn label-primary">
+                                            <a href="{{ path('faculte_admin_modifier_etudiant',{'idE':Etudiant.id}) }}"
+                                               style="color:blue;"><i class="fa fa-edit font-white"></i></a></span>
+                                            <span class="label label-mn btn red-thunderbird">
+                                                <a href="/faculte/pfeProjet/web/app_dev.php/admin/desactiverE/{{ Etudiant.user.id }}" title="desactiver" style="color:blue;"><i class="fa fa-times font-white"></i></a></span>
+                                            <span class="label label-mn label-success">
+                                                <a href=" /faculte/pfeProjet/web/app_dev.php/admin/activerE/{{ Etudiant.user.id }}" title="activer" style="color:blue;"><i class="fa fa-thumbs-up font-white"></i></a></span>
+
+                                        </td>
+
+                                        <div id="modal-delete{{ Etudiant.id }}" class="modal fade" role="dialog"
+                                             aria-labelledby="myModalLabel10" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                                aria-hidden="true"></button>
+                                                        <h4 class="modal-title">Supprimer Etudiant </h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p style="color:red">Voulez-vous supprimer cette Etudiant
+                                                            "{{ Etudiant.nom }}"?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a href="{{ path('faculte_admin_supprimer_etudiant',{'idE':Etudiant.id}) }}"
+                                                           class="btn green"> Supprimer</a>
+                                                        <button class="btn default" data-dismiss="modal"
+                                                                aria-hidden="true">Annuler
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tr>
+                                {% endfor %}
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END SAMPLE FORM PORTLET-->
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+{% endblock %}

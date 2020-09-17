@@ -1,0 +1,76 @@
+﻿-- phpMyAdmin SQL Dump
+-- version 4.5.2
+-- http://www.phpmyadmin.net
+--
+-- Client :  127.0.0.1
+-- Généré le :  Mar 29 Novembre 2016 à 07:54
+-- Version du serveur :  5.7.9
+-- Version de PHP :  5.6.16
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données :  `production`
+--
+CREATE DATABASE IF NOT EXISTS `production` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `production`;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `image`
+--
+
+DROP TABLE IF EXISTS `image`;
+CREATE TABLE IF NOT EXISTS `image` (
+  `IdImage` int(11) NOT NULL AUTO_INCREMENT,
+  `IdProduit` int(11) NOT NULL,
+  `Titre` varchar(100) NOT NULL,
+  `URL` varchar(200) NOT NULL,
+  PRIMARY KEY (`IdImage`),
+  KEY `IdProduit` (`IdProduit`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `produit`
+--
+
+DROP TABLE IF EXISTS `produit`;
+CREATE TABLE IF NOT EXISTS `produit` (
+  `IdProduit` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(100) NOT NULL,
+  `marque` varchar(100) NOT NULL,
+  `modele` varchar(100) NOT NULL,
+  `stock` int(11) NOT NULL,
+  `prix` decimal(10,0) NOT NULL,
+  PRIMARY KEY (`IdProduit`)
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `produit`
+--
+
+INSERT INTO `produit` (`IdProduit`, `nom`, `marque`, `modele`, `stock`, `prix`) VALUES
+(1, 'prod 1', 'HP', 'HP 2050', 20, '2000'),
+(2, 'HP', 'HP', 'HP 3500', 200, '3000'),
+(3, 'Pc 3', 'Sony', 'Sony A', 123, '2050'),
+(4, 'Prod ', 'Marque', 'Modele', 1000, '2010'),
+(9, 'Prod ', 'Marque', 'Modele', 1000, '2010'),
+(6, 'Prod ', 'Marque', 'Modele', 1000, '2010'),
+(7, 'Prod ', 'Marque', 'Modele', 1000, '2010'),
+(8, 'Prod ', 'Marque', 'Modele', 1000, '2010'),
+(13, 'hhh', 'hh', 'hhh', 88, '88'),
+(14, 'hhh', 'hh', 'hhh', 886, '885');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

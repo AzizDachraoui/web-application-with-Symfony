@@ -1,0 +1,71 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a>
+                </li>
+                <li>
+                    <a href="{{ path('faculte_admin_niveaux') }}">liste des Niveaux</a>
+                </li>
+                <li class="active">Ajout d'un niveau</li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-edit font-green  "></i>
+                            <span class="caption-subject font-green ">Formulaire d'ajout</span>
+                        </div>
+                        <div class="actions">
+                        </div>
+                    </div>
+                    <!-- BEGIN SAMPLE FORM PORTLET-->
+
+                    <div class="portlet-body form ">
+                        <form class="form-horizontal" action="" method="POST" role="form">
+                            <div class="form-body col-md-12">
+                                <div class="form-group">
+                                    <div class="col-md-12 " style="color:red;">
+                                        {{ form_errors(form) }}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    {{ form_label(form.filiere,null, {'label_attr': {'class': 'col-md-3 control-label'} }) }}</label>
+                                    <div class="col-md-3">
+                                        {{ form_widget(form.filiere,{'attr': {'class': 'form-control'}} ) }}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    {{ form_label(form.numeroNiveau,null, {'label_attr': {'class': 'col-md-3 control-label'} }) }}</label>
+                                    <div class="col-md-3">
+                                        {{ form_widget(form.numeroNiveau,{'attr': {'class': 'form-control','placeholder':'Numéro de niveau' }} ) }}
+                                    </div>
+                                </div>
+                                {{ form_rest(form) }}
+                            </div>
+                            <div class="form-actions ">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn green">Enregistrer</button>
+                                    <button type="button" class="btn default" onclick='location.href="{{ path('faculte_admin_niveaux') }}"'>Annuler</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- END SAMPLE FORM PORTLET-->
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "FaculteEtudiantBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="col-md-9 col-sm-9">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title">
+                    <a href="#accordion1_1" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle">
+                        Liste des cours
+                    </a>
+                </h5>
+            </div>
+            <div class="panel-collapse collapse in" id="accordion1_1">
+                <div class="panel-body">
+                    <div class="portlet light ">
+                        <div class="portlet-body">
+                            {% if cours is not empty %}
+                                {% for cour in cours %}
+                                    <div class="well">
+                                        <b>
+                                            COUR: {{ cour.nom }}<br>
+                                            <a href="{{ asset('files/cours/'~cour.id~'/'~cour.pathFile) }}">Télécharger cours</a>
+                                        </b>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

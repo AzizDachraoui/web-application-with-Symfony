@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87427809-5de1-4b77-8227-5569afb3a0f4" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Front.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Front.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="99" column="100" lean-forward="true" selection-start-line="99" selection-start-column="100" selection-end-line="99" selection-end-column="100" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#4;n#h4#0;n#div#2;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/Les templates/[GET]-Metronic_v4.0-Responsive-Admin-Dashboard-Template/v4.0/theme/templates/frontend/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6919">
+              <caret line="481" column="20" lean-forward="false" selection-start-line="466" selection-start-column="14" selection-end-line="481" selection-end-column="20" />
+              <folding>
+                <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demandeEnregistre.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Inscription/demandeEnregistre.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="182" column="21" lean-forward="false" selection-start-line="170" selection-start-column="15" selection-end-line="182" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="onepage-index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/Les templates/[GET]-Metronic_v4.0-Responsive-Admin-Dashboard-Template/v4.0/theme/templates/frontend/onepage-index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8058">
+              <caret line="474" column="114" lean-forward="false" selection-start-line="474" selection-start-column="68" selection-end-line="474" selection-end-column="114" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Home</find>
+      <find>prés</find>
+      <find>Services</find>
+      <find>Lorem ipsum dolor sit amet</find>
+      <find>FOUNDER</find>
+      <find>css</find>
+      <find>js</find>
+      <find>facebook</find>
+      <find>profession</find>
+      <find>render</find>
+      <find>not</find>
+      <find>pricing</find>
+      <find>About Us</find>
+      <find>Contact Form</find>
+      <find>user</find>
+      <find>con</find>
+      <find>index</find>
+      <find>ABOUT US</find>
+      <find>form</find>
+      <find>Contacts</find>
+      <find>contacts</find>
+      <find>contact</find>
+      <find>MED</find>
+      <find>responsive video</find>
+      <find>inscription</find>
+      <find>powerf</find>
+      <find>Lorem ipsum dolor sit amet,</find>
+      <find>responsive</find>
+      <find>responsive</find>
+      <find>responsive video</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&lt;link href=&quot;{{ asset ('bundles/faculteadmin/</replace>
+      <replace>.css') }}&quot;</replace>
+      <replace>&lt;link href=&quot;{{ asset('bundles/faculteadmin</replace>
+      <replace>&lt;script src=&quot;..</replace>
+      <replace>&lt;script src=&quot;{{ asset('bundles/faculteadmin</replace>
+      <replace>.js') }}</replace>
+      <replace>.css') }}</replace>
+      <replace>Aucune donnée disponible</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\EtudiantBundle\Resources\public</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\views\EmploiTemps</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Entity</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\public\global\plugins\datatables</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\public</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\views</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\FrontBundle\Resources\public</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\vendor\friendsofsymfony\user-bundle</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Controller</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\vendor\friendsofsymfony</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\vendor</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\EnseignantBundle\Resources\public</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\EnseignantBundle</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte</dir>
+    </dirStrings>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Inscription" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Inscription" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:form FaculteAdminBundle:Inscription" />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Inscription" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:form FaculteAdminBundle:Inscription" />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Inscription" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:form FaculteAdminBundle:Inscription" />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Inscription" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:form  FaculteAdminBundle:Inscription" />
+      <command text="s assets:install " />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Publier" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Etudiant" />
+      <command text="doctrine:generate:entity" />
+      <command text="s doctrine:generate:entity" />
+      <command text="s doctrine:generate:form FaculteAdminBundle:Contact" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Contact" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s assets:install " />
+    </commandsHistory>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Publier/modifierpublierFile.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/PublierDocumentType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Publier/PublierFileAdd.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/PublierDocument.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/PublierDocumentController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Publier/contenuEmailImage.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/PublierImageController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/UserInscriptionType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Inscription.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/InscriptionType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Default/PageAccueil.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/public/global/css/components.css" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/public/frontend/onepage/css/style-responsive.css" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/public/frontend/onepage/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/public/frontend/layout/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Inscription/demandeEnregistre.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Controller/InscriptionController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Inscription/inscription.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Publier.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/PublierType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/PublierFileEditType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/PublierEditType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Publier/modifier.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Publier/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/ListeInscription/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Publier" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Publier/ajouter.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Etudiant/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/EtudiantController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/EtudiantType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Etudiant.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/PublierSimpleController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Default/publier.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Inscription/Publication.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Controller/PublicationController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Repository/InscriptionRepository.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/ListeInscriptionController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Demande/notifDemande.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/ListeInscription/notifDemandeInscription.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/UserContactType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Contact.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/ContactType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Controller/ContactController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Contact/Contact.html.twig" />
+        <option value="$USER_HOME$/Desktop/Les templates/[GET]-Metronic_v4.0-Responsive-Admin-Dashboard-Template/v4.0/theme/templates/frontend/index.html" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Front.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1368" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculte" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculte" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculte" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Inscription" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculte" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pfeProjet" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculte" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="SearchEverywhereHistoryKey" value="M&#9;FILE&#9;file://C:/wamp64/www/faculte/pfeProjet/src/Faculte/AdminBundle/Resources/views/Etudiant/ajouter.html.twig" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\faculte\pfeProjet\web\assets\pages\img" />
+      <recent name="C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Controller" />
+      <recent name="C:\wamp64\www\faculte\pfeProjet\src\Faculte\EtudiantBundle\Resources\views\Default" />
+      <recent name="C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\FOSUserBundle" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Form" />
+      <recent name="C:\wamp64\www\faculte\pfeProjet\src\Faculte\FrontBundle\Controller" />
+      <recent name="C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\views\ListeInscription" />
+      <recent name="C:\wamp64\www\faculte\pfeProjet\src\Faculte\FrontBundle\Resources\views\Inscription" />
+      <recent name="C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87427809-5de1-4b77-8227-5569afb3a0f4" name="Default" comment="" />
+      <created>1485896441551</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1485896441551</updated>
+      <workItem from="1485896443621" duration="6845000" />
+      <workItem from="1485977772532" duration="1284000" />
+      <workItem from="1485979106547" duration="19162000" />
+      <workItem from="1486051993291" duration="11695000" />
+      <workItem from="1486063984049" duration="18900000" />
+      <workItem from="1486144402819" duration="28758000" />
+      <workItem from="1486262774413" duration="8300000" />
+      <workItem from="1486300776950" duration="8322000" />
+      <workItem from="1486311052551" duration="8885000" />
+      <workItem from="1486386599137" duration="10876000" />
+      <workItem from="1486398949032" duration="180000" />
+      <workItem from="1486399433673" duration="16447000" />
+      <workItem from="1486463962228" duration="13599000" />
+      <workItem from="1486486646741" duration="11265000" />
+      <workItem from="1486555902820" duration="281000" />
+      <workItem from="1486571519830" duration="12891000" />
+      <workItem from="1486637234942" duration="39381000" />
+      <workItem from="1486806988047" duration="7042000" />
+      <workItem from="1486974166175" duration="5119000" />
+      <workItem from="1487061512887" duration="597000" />
+      <workItem from="1487076865542" duration="9828000" />
+      <workItem from="1487147674783" duration="11506000" />
+      <workItem from="1487239632827" duration="133000" />
+      <workItem from="1487244818262" duration="38000" />
+      <workItem from="1487245003907" duration="2705000" />
+      <workItem from="1487260766006" duration="164000" />
+      <workItem from="1487316305623" duration="9579000" />
+      <workItem from="1487416077657" duration="787000" />
+      <workItem from="1487578873496" duration="1856000" />
+      <workItem from="1487757304256" duration="2605000" />
+      <workItem from="1487759990438" duration="14542000" />
+      <workItem from="1487780846113" duration="2279000" />
+      <workItem from="1487784862251" duration="6896000" />
+      <workItem from="1487847096906" duration="27570000" />
+      <workItem from="1487928141663" duration="14480000" />
+      <workItem from="1488037105823" duration="12164000" />
+      <workItem from="1488100713849" duration="3213000" />
+      <workItem from="1488143382210" duration="102000" />
+      <workItem from="1488185091856" duration="453000" />
+      <workItem from="1488185676272" duration="4789000" />
+      <workItem from="1488192347227" duration="26536000" />
+      <workItem from="1488280883445" duration="20295000" />
+      <workItem from="1488361843958" duration="9529000" />
+      <workItem from="1488373544794" duration="24008000" />
+      <workItem from="1488449010641" duration="28534000" />
+      <workItem from="1488614729951" duration="2269000" />
+      <workItem from="1488617397588" duration="5762000" />
+      <workItem from="1488624673994" duration="4689000" />
+      <workItem from="1488785670739" duration="4853000" />
+      <workItem from="1488879509526" duration="30243000" />
+      <workItem from="1488968373322" duration="9933000" />
+      <workItem from="1488986903723" duration="1141000" />
+      <workItem from="1488989053264" duration="11392000" />
+      <workItem from="1489055392474" duration="19079000" />
+      <workItem from="1489139746311" duration="28458000" />
+      <workItem from="1489236437775" duration="5756000" />
+      <workItem from="1489245193751" duration="10326000" />
+      <workItem from="1489256326405" duration="1596000" />
+      <workItem from="1489258164957" duration="408000" />
+      <workItem from="1489259117686" duration="20702000" />
+      <workItem from="1489315497184" duration="19084000" />
+      <workItem from="1489345481599" duration="8648000" />
+      <workItem from="1489396341204" duration="3699000" />
+      <workItem from="1489400969301" duration="12580000" />
+      <workItem from="1489416837097" duration="22933000" />
+      <workItem from="1489482845607" duration="27328000" />
+      <workItem from="1489517717139" duration="7696000" />
+      <workItem from="1489573078775" duration="10900000" />
+      <workItem from="1489596688161" duration="8105000" />
+      <workItem from="1489611408498" duration="2413000" />
+      <workItem from="1489782965247" duration="5197000" />
+      <workItem from="1489822858039" duration="3303000" />
+      <workItem from="1489830065954" duration="375000" />
+      <workItem from="1489863779643" duration="592000" />
+      <workItem from="1490027606668" duration="151000" />
+      <workItem from="1490086365034" duration="34131000" />
+      <workItem from="1490170712943" duration="36395000" />
+      <workItem from="1490259929164" duration="36979000" />
+      <workItem from="1490343010821" duration="10950000" />
+      <workItem from="1490434926096" duration="2462000" />
+      <workItem from="1490437953617" duration="13540000" />
+      <workItem from="1490452211469" duration="22804000" />
+      <workItem from="1490519413947" duration="7632000" />
+      <workItem from="1490523545862" duration="15608000" />
+      <workItem from="1490541087118" duration="15355000" />
+      <workItem from="1490604844477" duration="9668000" />
+      <workItem from="1490625113791" duration="6280000" />
+      <workItem from="1490690241741" duration="3106000" />
+      <workItem from="1490776370351" duration="37306000" />
+      <workItem from="1490863761928" duration="13136000" />
+      <workItem from="1490882545855" duration="674000" />
+      <workItem from="1490896179727" duration="10013000" />
+      <workItem from="1490985248479" duration="2240000" />
+      <workItem from="1491029501065" duration="9152000" />
+      <workItem from="1491039154707" duration="792000" />
+      <workItem from="1491043899368" duration="2956000" />
+      <workItem from="1491047123649" duration="1988000" />
+      <workItem from="1491212031429" duration="7653000" />
+      <workItem from="1491218770671" duration="20633000" />
+      <workItem from="1491290850564" duration="49455000" />
+      <workItem from="1491377761840" duration="47176000" />
+      <workItem from="1491469943191" duration="10224000" />
+      <workItem from="1491483286860" duration="14369000" />
+      <workItem from="1491641007021" duration="18310000" />
+      <workItem from="1491684763036" duration="559000" />
+      <workItem from="1491687239408" duration="3635000" />
+      <workItem from="1491747565101" duration="2576000" />
+      <workItem from="1491754785255" duration="146000" />
+      <workItem from="1491755329645" duration="14501000" />
+      <workItem from="1491813234485" duration="1080000" />
+      <workItem from="1492177410757" duration="1716000" />
+      <workItem from="1492199104671" duration="642000" />
+      <workItem from="1492238087585" duration="28381000" />
+      <workItem from="1492368409354" duration="8617000" />
+      <workItem from="1492501899795" duration="1124000" />
+      <workItem from="1492677148447" duration="913000" />
+      <workItem from="1492802288647" duration="513000" />
+      <workItem from="1492854308128" duration="669000" />
+      <workItem from="1493045379715" duration="596000" />
+      <workItem from="1493148649312" duration="711000" />
+      <workItem from="1493192202879" duration="1316000" />
+      <workItem from="1493228285830" duration="11750000" />
+      <workItem from="1493285211363" duration="4054000" />
+      <workItem from="1493298595385" duration="3529000" />
+      <workItem from="1493717314764" duration="3610000" />
+      <workItem from="1494317526471" duration="4865000" />
+      <workItem from="1494670766567" duration="4847000" />
+      <workItem from="1494676191150" duration="55000" />
+      <workItem from="1494676873081" duration="21720000" />
+      <workItem from="1495194220156" duration="803000" />
+      <workItem from="1495226599130" duration="668000" />
+      <workItem from="1496040535753" duration="26198000" />
+      <workItem from="1496125437542" duration="11833000" />
+      <workItem from="1496142144052" duration="135637000" />
+      <workItem from="1496819465026" duration="21594000" />
+      <workItem from="1496905342353" duration="4056000" />
+      <workItem from="1496911613150" duration="20904000" />
+      <workItem from="1496999564817" duration="29722000" />
+      <workItem from="1497513103993" duration="21451000" />
+      <workItem from="1497553964451" duration="8855000" />
+      <workItem from="1497564866291" duration="5588000" />
+      <workItem from="1497681814203" duration="14271000" />
+      <workItem from="1498031569434" duration="5665000" />
+      <workItem from="1498033867216" duration="15578000" />
+      <workItem from="1498114279631" duration="3884000" />
+      <workItem from="1498635775094" duration="402000" />
+      <workItem from="1498636894931" duration="4086000" />
+      <workItem from="1498642182638" duration="4028000" />
+      <workItem from="1498646314205" duration="10188000" />
+      <workItem from="1498719840896" duration="16208000" />
+      <workItem from="1498808136332" duration="22673000" />
+      <workItem from="1498896808893" duration="952000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1722387000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1368" height="744" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26553255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32704404" sideWeight="0.5087848" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="479" y="284" width="407" height="159" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4481132" sideWeight="0.49260354" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32704404" sideWeight="0.49121523" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/User.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Faculte/FrontBundle/Controller/InscriptionController.php</url>
+          <line>41</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Desktop/Les templates/[GET]-Metronic_v4.0-Responsive-Admin-Dashboard-Template/v4.0/theme/templates/frontend/page-gallery.html</url>
+          <line>509</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="9" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/PageActualiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Publier/ajouter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="52" column="132" lean-forward="false" selection-start-line="52" selection-start-column="132" selection-end-line="52" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.133/index.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/EnseignantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1732">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Etudiant/contenuEmail.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/EtudiantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="72" column="82" lean-forward="false" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/EtudiantType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Etudiant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Publier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="122" column="17" lean-forward="false" selection-start-line="122" selection-start-column="15" selection-end-line="122" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/PublierSimpleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/EtudiantBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5525">
+          <caret line="325" column="13" lean-forward="false" selection-start-line="325" selection-start-column="13" selection-end-line="325" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Etudiant/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Default/publier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="46" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Inscription/Publication.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="313" column="42" lean-forward="false" selection-start-line="313" selection-start-column="42" selection-end-line="313" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Repository/DemandeRattrapageRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/ListeInscription/notifDemandeInscription.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="218" column="77" lean-forward="false" selection-start-line="218" selection-start-column="77" selection-end-line="218" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Repository/InscriptionRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/ListeInscriptionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/DemandeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="105" column="54" lean-forward="false" selection-start-line="105" selection-start-column="54" selection-end-line="105" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Les templates/[GET]-Metronic_v4.0-Responsive-Admin-Dashboard-Template/v4.0/theme/templates/frontend/page-contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5525">
+          <caret line="325" column="34" lean-forward="false" selection-start-line="308" selection-start-column="17" selection-end-line="325" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/DemandeRattrapage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="55" column="27" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/AbsenceEtdController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/UserInscriptionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-173">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/UserContactType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Inscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="86" column="7" lean-forward="false" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Contact">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Contact.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Controller/InscriptionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Controller/PublicationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/ContactType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="331" column="26" lean-forward="false" selection-start-line="331" selection-start-column="26" selection-end-line="331" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Filiere/ajouter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="11" column="67" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Default/contact.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Controller/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="39" column="58" lean-forward="false" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="63" lean-forward="false" selection-start-line="82" selection-start-column="56" selection-end-line="82" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Etudiant/ajouter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="161" column="26" lean-forward="false" selection-start-line="161" selection-start-column="26" selection-end-line="161" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Demande/notifDemande.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="91" lean-forward="false" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Demande/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Demande/detail.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="135" column="30" lean-forward="false" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Contact/Contact.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5423">
+          <caret line="319" column="112" lean-forward="false" selection-start-line="319" selection-start-column="112" selection-end-line="319" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/UserEditType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Les templates/[GET]-Metronic_v4.0-Responsive-Admin-Dashboard-Template/v4.0/theme/templates/frontend/onepage-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8058">
+          <caret line="474" column="114" lean-forward="false" selection-start-line="474" selection-start-column="68" selection-end-line="474" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Inscription/inscription.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Les templates/metronic-454/themeforest-4021469-metronic-responsive-admin-dashboard-template/metronic_v4.5.4/theme/admin_5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="3056" column="31" lean-forward="false" selection-start-line="3056" selection-start-column="29" selection-end-line="3056" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Les templates/[GET]-Metronic_v4.0-Responsive-Admin-Dashboard-Template/v4.0/theme/templates/frontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6919">
+          <caret line="481" column="20" lean-forward="false" selection-start-line="466" selection-start-column="14" selection-end-line="481" selection-end-column="20" />
+          <folding>
+            <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Inscription/demandeEnregistre.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="182" column="21" lean-forward="false" selection-start-line="170" selection-start-column="15" selection-end-line="182" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Front.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="99" column="100" lean-forward="true" selection-start-line="99" selection-start-column="100" selection-end-line="99" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#h4#0;n#div#2;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

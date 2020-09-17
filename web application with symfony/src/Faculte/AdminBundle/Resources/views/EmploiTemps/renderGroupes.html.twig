@@ -1,0 +1,18 @@
+<select id="faculte_adminbundle_emploitemps_groupe" name="faculte_adminbundle_emploitemps[groupe]" required="required" class="form-control" placeholder="Numero de Groupe">
+    <option value="" selected="selected">Choisissez un groupe</option>
+    {%if groupes is not empty%}
+        {%for groupe in groupes%}
+            <option value="{{groupe.id}}" id="{{groupe.id}}">{{groupe.numGroupe}}</option>
+        {%endfor%}
+    {%endif%}
+</select>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        {% if emploitemps is not empty %}
+        var idGroupe = {{emploitemps.groupe.id }} ;
+
+        $("#faculte_adminbundle_emploitemps_groupe > option[value *= '"+idGroupe+"']").attr("selected",true);
+        {% endif %}
+    });
+</script>

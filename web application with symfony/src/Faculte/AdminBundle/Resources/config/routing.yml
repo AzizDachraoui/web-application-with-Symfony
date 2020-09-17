@@ -1,0 +1,230 @@
+faculte_admin_homepage:
+    path:     /
+    defaults: { _controller: FaculteAdminBundle:Default:index }
+
+
+
+faculte_admin_enseignants:
+    path:     /enseignants
+    defaults: { _controller: FaculteAdminBundle:Enseignant:index }
+faculte_admin_ajouter:
+    path:     /ajouter
+    defaults: { _controller: FaculteAdminBundle:Enseignant:ajouterEnseignant }
+faculte_admin_modifier:
+    path:     /modifier/{id}
+    defaults: { _controller: FaculteAdminBundle:Enseignant:modifierEnseignant }
+faculte_admin_supprimer:
+     path:    /supprimer/{id}
+     defaults: {_controller: FaculteAdminBundle:Enseignant:supprimerEnseignant}
+
+faculte_admin_desactiver:
+     path:    /desactiver/{id}
+     defaults: {_controller: FaculteAdminBundle:Enseignant:desactiverEnseignant}
+
+faculte_admin_activer:
+     path:    /activer/{id}
+     defaults: {_controller: FaculteAdminBundle:Enseignant:activerEnseignant}
+
+
+faculte_admin_etudiants:
+    path:     /etudiants
+    defaults: { _controller: FaculteAdminBundle:Etudiant:index }
+faculte_admin_ajouter_etudiant:
+    path:     /ajouter_etudiant
+    defaults: { _controller: FaculteAdminBundle:Etudiant:ajouterEtudiant }
+faculte_admin_modifier_etudiant:
+    path:     /modifier_etudiant/{idE}
+    defaults: { _controller: FaculteAdminBundle:Etudiant:modifierEtudiant }
+faculte_admin_supprimer_etudiant:
+     path:    /supprimer_etudiant/{idE}
+     defaults: {_controller: FaculteAdminBundle:Etudiant:supprimerEtudiant}
+
+faculte_admin_activer_etudiant:
+    path:     /activerE/{id}
+    defaults: { _controller: FaculteAdminBundle:Etudiant:activerEtudiant }
+
+faculte_admin_desactiver_etudiant:
+    path:     /desactiverE/{id}
+    defaults: { _controller: FaculteAdminBundle:Etudiant:desactiverEtudiant }
+
+
+
+faculte_admin_filieres:
+        path:     /filieres
+        defaults: { _controller: FaculteAdminBundle:Filiere:index }
+faculte_admin_ajouter_filiere:
+    path:     /ajouter_filiere
+    defaults: { _controller: FaculteAdminBundle:Filiere:ajouterFiliere}
+faculte_admin_modifier_filiere:
+    path:     /modifier_filiere/{idF}
+    defaults: { _controller: FaculteAdminBundle:Filiere:modifierFiliere }
+faculte_admin_supprimer_filiere:
+     path:    /supprimer_filiere/{idF}
+     defaults: {_controller: FaculteAdminBundle:Filiere:supprimerFiliere}
+
+
+faculte_admin_matieres:
+        path:     /matieres
+        defaults: { _controller: FaculteAdminBundle:Matiere:index }
+faculte_admin_ajouter_matiere:
+    path:     /ajouter_matiere
+    defaults: { _controller: FaculteAdminBundle:Matiere:ajouterMatiere}
+faculte_admin_modifier_matiere:
+    path:     /modifier_matiere/{idM}
+    defaults: { _controller: FaculteAdminBundle:Matiere:modifierMatiere }
+faculte_admin_supprimer_matiere:
+     path:    /supprimer_matiere/{idM}
+     defaults: {_controller: FaculteAdminBundle:Matiere:supprimerMatiere}
+
+
+faculte_admin_niveaux:
+        path:     /niveaux
+        defaults: { _controller: FaculteAdminBundle:Niveau:index }
+faculte_admin_ajouter_niveau:
+    path:     /ajouter_niveau
+    defaults: { _controller: FaculteAdminBundle:Niveau:ajouterNiveau}
+faculte_admin_modifier_niveau:
+    path:     /modifier_niveau/{idN}
+    defaults: { _controller: FaculteAdminBundle:Niveau:modifierNiveau }
+faculte_admin_supprimer_niveau:
+     path:    /supprimer_niveau/{idN}
+     defaults: {_controller: FaculteAdminBundle:Niveau:supprimerNiveau}
+
+
+faculte_admin_groupes:
+        path:     /groupes
+        defaults: { _controller: FaculteAdminBundle:Groupe:index }
+faculte_admin_ajouter_groupe:
+         path:     /ajouter_groupe
+         defaults: { _controller: FaculteAdminBundle:Groupe:ajouterGroupe}
+faculte_admin_modifier_groupe:
+         path:     /modifier_groupe/{idG}
+         defaults: { _controller: FaculteAdminBundle:Groupe:modifierGroupe}
+faculte_admin_supprimer_groupe:
+          path:    /supprimer_groupe/{idG}
+          defaults: {_controller: FaculteAdminBundle:Groupe:supprimerGroupe}
+
+
+
+
+faculte_admin_render_niveau_matiere:
+    path:     /render_niveau/matiere
+    defaults: { _controller: FaculteAdminBundle:Matiere:renderNiveau}
+faculte_admin_render_niveau_groupe:
+    path:     /render_niveaux/groupe
+    defaults: { _controller: FaculteAdminBundle:Groupe:renderNiveaux}
+faculte_admin_render_niveau_etudiant:
+    path:     /render_niveaux/etudiant
+    defaults: { _controller: FaculteAdminBundle:Etudiant:renderNiveaux}
+faculte_admin_render_groupe_etudiant:
+    path:     /render_groups/etudiant
+    defaults: { _controller: FaculteAdminBundle:Etudiant:renderGroupes}
+
+
+
+faculte_admin_emploitemps:
+        path:     /emploitemps
+        defaults: { _controller: FaculteAdminBundle:EmploiTemps:index }
+faculte_admin_ajouter_emploitemps:
+    path:     /ajouter_emploitemps
+    defaults: { _controller: FaculteAdminBundle:EmploiTemps:ajouteremploitemps}
+faculte_admin_modifier_emploitemps:
+    path:     /modifier_emploitemps/{idET}
+    defaults: { _controller: FaculteAdminBundle:EmploiTemps:modifieremploitemps }
+faculte_admin_modifier_emploitemps_file:
+    path:     /modifier_emploitemps_file/{idET}
+    defaults: { _controller: FaculteAdminBundle:EmploiTemps:modifieremploitempsFile}
+faculte_admin_supprimer_emploitemps:
+     path:    /supprimer_emploitemps/{idET}
+     defaults: {_controller: FaculteAdminBundle:EmploiTemps:supprimeremploitemps}
+
+
+faculte_admin_resultats:
+        path:     /resultats
+        defaults: { _controller: FaculteAdminBundle:Resultat:index }
+faculte_admin_ajouter_resultats:
+    path:     /ajouter_resultats
+    defaults: { _controller: FaculteAdminBundle:Resultat:ajouterResultat}
+faculte_admin_modifier_resultats:
+    path:     /modifier_resultats/{idR}
+    defaults: { _controller: FaculteAdminBundle:Resultat:modifierResultat}
+faculte_admin_modifier_resultats_file:
+    path:     /modifier_resultats_file/{idR}
+    defaults: { _controller: FaculteAdminBundle:Resultat:modifierResultatFile}
+faculte_admin_supprimer_resultats:
+     path:    /supprimer_resultats/{idR}
+     defaults: {_controller: FaculteAdminBundle:Resultat:supprimerResultat}
+faculte_admin_render_niveau_resultats:
+    path:     /render_niveau
+    defaults: { _controller: FaculteAdminBundle:Resultat:renderNiveau}
+
+
+
+
+
+
+faculte_admin_render_niveau_emploitemps:
+    path:     /render_niveaux/emploitemps
+    defaults: { _controller: FaculteAdminBundle:EmploiTemps:renderNiveaux}
+faculte_admin_render_groupe_emploitemps:
+    path:     /render_groups/emploitemps
+    defaults: { _controller: FaculteAdminBundle:EmploiTemps:renderGroupes}
+
+
+
+faculte_admin_absenceEtd:
+   path:     /absenceEtd
+   defaults: { _controller: FaculteAdminBundle:AbsenceEtd:Filieres }
+faculte_admin_absenceEtdGroupe:
+   path:      /groupes/{idNiveau}
+   defaults: { _controller: FaculteAdminBundle:AbsenceEtd:groupes }
+
+
+
+
+
+
+faculte_admin_absenceEtds:
+   path:     /absenceEtds/{idGroupe}
+   defaults: { _controller: FaculteAdminBundle:AbsenceEtd:index }
+faculte_admin_search_absence_etudiant:
+   path:     /search_absence_etds
+   defaults: { _controller: FaculteAdminBundle:AbsenceEtd:searchEtd }
+faculte_admin_render_modal_absence_etd:
+   path:      /modal_absence_etd
+   defaults: { _controller: FaculteAdminBundle:AbsenceEtd:modalAbsenceEtd }
+
+
+
+
+
+
+faculte_admin_galerie:
+    path:     /galerie
+    defaults: { _controller: FaculteAdminBundle:Galerie:index}
+
+
+
+
+faculte_admin_publiers:
+        path:  /publiers
+        defaults: { _controller: FaculteAdminBundle:PublierSimple:index }
+faculte_admin_ajouter_publiers:
+    path:     /ajouter_publiers
+    defaults: { _controller: FaculteAdminBundle:PublierSimple:ajouterpublier}
+faculte_admin_modifier_publiers:
+    path:     /modifier_publiers/{idP}
+    defaults: { _controller: FaculteAdminBundle:PublierSimple:modifierpublier}
+faculte_admin_modifier_publiers_file:
+    path:     /modifier_publiers_file/{idP}
+    defaults: { _controller: FaculteAdminBundle:PublierSimple:modifierpublierFile}
+faculte_admin_supprimer_publiers:
+     path:    /supprimer_publiers/{idP}
+     defaults: {_controller: FaculteAdminBundle:PublierSimple:supprimerpublier}
+
+faculte_admin_ListeInscriptions:
+        path:  /ListeInscriptions
+        defaults: { _controller: FaculteAdminBundle:ListeInscription:ListeInscriptions}
+faculte_admin_notif_demande_listeInscription:
+    path:     /demande_listeInscription
+    defaults: { _controller: FaculteAdminBundle:ListeInscription:notifDemande}

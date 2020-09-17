@@ -1,0 +1,36 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <h1>Gestion des Absences des étudiants</h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a>
+                </li>
+                <li class="active">liste des Absences des étudiants
+                </li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+               <div class="portlet-body">
+                {% if groupes is not empty %}
+                    {% for groupe in groupes %}
+                   <div class="note note-danger">
+                                <b>
+                                    <a href="{{ path('faculte_admin_absenceEtds',{'idGroupe':groupe.id}) }}"> {{ groupe.numGroupe }} </a>
+                                </b>
+                   </div>
+                    {% endfor %}
+                {% endif %}
+               </div>
+                <!-- END PAGE BASE CONTENT -->
+            </div>
+        </div>
+    </div>
+{% endblock %}

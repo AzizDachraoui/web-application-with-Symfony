@@ -1,0 +1,121 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * PublierImage
+ *@ORM\HasLifecycleCallbacks
+ * @ORM\Table(name="publier_image")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\PublierImageRepository")
+ */
+class PublierImage
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre", type="string", length=255)
+     */
+    private $titre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="text", length=255)
+     */
+    private $description;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image", type="string", length=255, nullable=true)
+     */
+    private $image;
+
+
+
+    public function getFullImagePath() {
+        return null === $this->image ? null : $this->getUploadImageRootDir(). $this->image;
+    }
+
+    public function getUploadImageRootDir() {
+        // the absolute directory path where uploaded documents should be saved
+        return $this->getTmpUploadImageRootDir()."/".$this->getId()."/";
+    }
+
+    public function getTmpUploadImageRootDir() {
+        // the absolute directory path where uploaded documents should be saved
+        return __DIR__ . '/../../../../web/files/image/';
+    }
+
+    public function getExtensionImage() {
+
+        $name = strtr($this->image->getClientOriginalName(),
+            'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ',
+            'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
+        $name = preg_replace('/([^.a-z0-9]+)/i', '-', $name);
+
+        $ext = strtolower(substr($name, strrpos($name, '.'))); // extension du fichier
+        return  $ext;
+    }
+
+    public function uploadImage() {
+
+        // the file property can be empty if the field is not required
+        if (null === $this->image) {
+            return;
+        }
+
+        $name = strtr($this->image->getClientOriginalName(),
+            'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ',
+            'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
+        $name = preg_replace('/([^.a-z0-9]+)/i', '-', $name);
+
+        if(!$this->getId()){
+            $this->image->move($this->getTmpUploadImageRootDir(), $name);
+        }else{
+            $this->image->move($this->getUploadImageRootDir(), $name);
+        }
+
+        $this->setImage($name);
+
+    }
+
+
+    public function moveImage()
+    {
+        if (null === $this->image) {
+            return;
+        }
+
+        if(!is_dir($this->getUploadImageRootDir())){
+            mkdir($this->getUploadImageRootDir());
+        }
+        copy($this->getTmpUploadImageRootDir().$this->image, $this->getFullImagePath());
+        unlink($this->getTmpUploadImageRootDir().$this->image);
+    }
+
+    /**
+     * @ORM\PreRemove()
+     */
+    public function removeImage()
+    {
+        if(file_exists($this->getFullImagePath())){
+            unlink($this->getFullImagePath());
+            //rmdir($this->getUploadPathFileRootDir());
+        }
+
+    }
+
+
+}
